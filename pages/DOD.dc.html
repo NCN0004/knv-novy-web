@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>Kalendár DOD – Kam na vysokú</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;display=swap" rel="stylesheet">
+<style>h1,h2:not([style*="Caveat"]),h3:not([style*="Caveat"]){font-family:'Bricolage Grotesque','Plus Jakarta Sans',sans-serif;letter-spacing:-0.025em}</style>
+<style>[style*="Caveat"]:not(.nocap)::first-letter{text-transform:uppercase}</style>
+<style>
+body{margin:0;background:#F6F5F3}
+a{color:#2B7F29}a:hover{color:#1F6A1E}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.dots{background-image:radial-gradient(#E4E0DD 1.3px,transparent 1.3px);background-size:22px 22px}
+.lift{transition:transform .25s ease,box-shadow .25s ease}
+.lift:hover{transform:translateY(-3px);box-shadow:0 18px 30px -18px rgba(57,53,54,0.35)}
+@media (prefers-reduced-motion:reduce){.lift:hover{transform:none}}
+@media (max-width:760px){.wrap{padding:0 16px}.hide-m{display:none !important}.h1m{font-size:44px !important}.h2m{font-size:30px !important}.stackm{flex-direction:column !important;align-items:stretch !important}.padm{padding-top:56px !important;padding-bottom:56px !important}}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #393536; background: #F6F5F3; width: 100%; min-height: 100vh">
+
+<div style="background: #D42A33; color: #FFFFFF; font-size: 14px"><div class="wrap stackm" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; padding-bottom: 10px"><span><strong style="font-style: italic">Roadshow</strong> · najbližšia zastávka: <strong>Prievidza · 1. decembra 2026</strong> · vstup zadarmo</span><span style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap"><a href="Chcem-vystavovat.dc.html" style="color: #D42A33; background: #FFFFFF; font-weight: 800; text-decoration: none; padding: 4px 12px 5px; border-radius: 999px; white-space: nowrap">Chcem byť vystavovateľ</a><a href="Zastavka-Prievidza.dc.html" style="color: #FFFFFF; font-weight: 700">Registrovať sa →</a></span></div></div>
+<header style="background: #FFFFFF; border-bottom: 1px solid #E6E3E1; position: sticky; top: 0; z-index: 10"><div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 76px">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #393536"><img src="{{KNV_ASSETS}}/logo-ikona.png" alt="" style="width: 64px; height: auto; display: block"><span style="display: flex; flex-direction: column; line-height: 1; font-weight: 800"><span style="font-size: 27px; letter-spacing: 0.01em">KAM</span><span style="font-size: 11.5px; letter-spacing: 0.05em; margin-top: 3px">NA VYSOKÚ</span></span><span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 14px; padding: 3px 10px 4px; border-radius: 10px 6px 11px 5px; transform: rotate(-5deg); align-self: flex-end; margin-bottom: 2px">Roadshow</span></a>
+<nav class="hide-m" aria-label="Hlavné menu" style="display: flex; gap: 22px; font-size: 15px; font-weight: 600; white-space: nowrap"><a href="Main.dc.html" style="color: #393536; text-decoration: none">Roadshow</a><a href="DOD.dc.html" aria-current="page" style="color: #2B7F29; text-decoration: none; font-weight: 700">Dni otvorených dverí</a><a href="Co-studovat.dc.html" style="color: #393536; text-decoration: none">Čo študovať</a><a href="Casopis.dc.html" style="color: #393536; text-decoration: none">Časopis</a><a href="Rady.dc.html" style="color: #393536; text-decoration: none">Rady</a><a href="Poradcovia.dc.html" style="color: #393536; text-decoration: none">Pre školy</a></nav>
+<a class="hide-m" href="Zastavka-Prievidza.dc.html" style="background: #2B7F29; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 999px; white-space: nowrap">Bezplatná vstupenka</a>
+</div></header>
+
+<!-- HERO -->
+<section class="dots" style="background-color: #FFFFFF; border-bottom: 1px solid #E6E3E1">
+<div class="wrap padm" style="padding-top: 64px; padding-bottom: 40px">
+<span style="font-family: Caveat, cursive; font-size: 32px; font-weight: 700; color: #C8232C">Choď, pozri, opýtaj sa!</span>
+<h1 class="h1m" style="font-size: 64px; line-height: 1.04; letter-spacing: -0.035em; font-weight: 800; margin: 6px 0 18px">Dni otvorených <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 8px">dverí</span></h1>
+<p style="font-size: 19px; line-height: 1.55; color: #393536; max-width: 760px; margin: 0 0 22px"><strong>DOD vysoké školy 2026</strong> na jednom mieste: termíny dní otvorených dverí vysokých škôl a fakúlt na Slovensku aj v Česku. Vyber si mesiac, pridaj si DOD do plánu a nič nezmeškáš.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 28px">
+<span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 18px; padding: 6px 16px 7px; border-radius: 14px 9px 15px 8px; transform: rotate(-2deg); display: inline-block">november – december 2026</span>
+<span style="font-size: 18px; color: #4A4546">{{totalLabel}} na vysokých školách na Slovensku, v Česku aj v Holandsku</span>
+</div>
+<div class="stackm" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; background: #FFFFFF; border: 1.5px solid #CFCAC8; border-radius: 20px; padding: 12px 16px">
+<div role="group" aria-label="Krajina" style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+<span style="font-size: 14px; font-weight: 700; color: #575152">Krajina:</span>
+<sc-for list="{{countryChips}}" as="c" hint-placeholder-count="3"><button type="button" onClick="{{c.toggle}}" aria-pressed="{{c.on}}" style="{{c.style}}">{{c.label}}</button></sc-for>
+</div>
+<span class="hide-m" aria-hidden="true" style="width: 1.5px; height: 32px; background: #E6E3E1"></span>
+<div role="group" aria-label="Mesiac" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{monthChips}}" as="m" hint-placeholder-count="3"><button type="button" onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button></sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- POZVÁNKA NA VÝSTAVU -->
+<section style="background: #FFF8DC; border-bottom: 2px solid #E8C55A">
+<div class="wrap padm stackm" style="padding-top: 22px; padding-bottom: 22px; display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap">
+<div style="display: flex; gap: 16px; align-items: center; min-width: 0; flex: 1 1 420px">
+<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 14px; background: #F2B705; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#393536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></span>
+<div style="min-width: 0"><div style="font-weight: 800; font-size: 19px; color: #393536; line-height: 1.3">Nestíhaš obísť všetky DOD? Príď na výstavu Kam na vysokú – {{nearCity}}, {{nearDate}}.</div>
+<div style="font-size: 15px; color: #4A4546; margin-top: 4px">Desiatky fakúlt na jednom mieste, za jedno dopoludnie. Vstup je zadarmo.</div></div>
+</div>
+<a href="{{nearUrl}}" data-knv="dod-pruh" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; background: #2B7F29; color: #FFFFFF; font-weight: 800; font-size: 16px; padding: 13px 22px; border-radius: 999px; text-decoration: none; white-space: nowrap">Chcem bezplatnú vstupenku →</a>
+</div>
+</section>
+
+<!-- ZOZNAM + PLÁN -->
+<section>
+<div class="wrap padm stackm" style="padding-top: 48px; padding-bottom: 88px; display: flex; gap: 36px; align-items: flex-start">
+
+<div style="flex: 1 1 740px; min-width: 0">
+<sc-for list="{{months}}" as="mo" hint-placeholder-count="2">
+<div style="margin-bottom: 44px">
+<div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px dashed #CFCAC8">
+<h2 class="h2m" style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -0.02em">{{mo.name}}</h2>
+<span style="font-family: Caveat, cursive; font-size: 26px; font-weight: 700; color: #C8232C">{{mo.count}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<sc-for list="{{mo.days}}" as="d" hint-placeholder-count="6">
+<sc-if value="{{d.invite}}" hint-placeholder-val="false"><a href="{{nearUrl}}" data-knv="dod-kalendar" style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap; background: #FFF8DC; border: 2px solid #D9A400; border-radius: 20px; padding: 18px 20px; box-shadow: 5px 5px 0 #F4DE8E; text-decoration: none; color: #393536"><span aria-hidden="true" style="flex: 0 0 auto; width: 56px; height: 56px; border-radius: 14px; background: #F2B705; display: flex; align-items: center; justify-content: center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#393536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></span><span style="flex: 1 1 260px; min-width: 0"><span style="display: block; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #8A6A00">Ďalší termín pre teba</span><span style="display: block; font-weight: 800; font-size: 19px; line-height: 1.3; margin-top: 2px">Výstava Kam na vysokú – {{nearCity}}, <span style="white-space: nowrap">{{nearDate}}</span></span><span style="display: block; font-size: 15px; color: #4A4546; margin-top: 3px">Desiatky fakúlt na jednom mieste, za jedno dopoludnie. Vstup zadarmo.</span></span><span style="flex: 0 0 auto; background: #2B7F29; color: #FFFFFF; font-weight: 800; font-size: 15px; padding: 11px 18px; border-radius: 999px; white-space: nowrap">Chcem bezplatnú vstupenku →</span></a></sc-if>
+<div class="lift stackm" style="display: flex; gap: 20px; align-items: flex-start; background: #FFFFFF; border: 1.5px solid #CFCAC8; border-radius: 22px; padding: 18px 20px; box-shadow: 0 10px 24px -16px rgba(57,53,54,0.45); opacity: {{d.op}}">
+<div style="flex: none; width: 78px; border-radius: 14px; overflow: hidden; border: 2px solid #393536; text-align: center; background: #FFFFFF; box-shadow: 3px 3px 0 {{d.shadow}}; transform: rotate({{d.rot}})">
+<div style="background: #D42A33; color: #FFFFFF; font-size: 12px; font-weight: 800; padding: 4px 0; letter-spacing: 0.06em">{{d.mon}}</div>
+<div style="font-size: 30px; font-weight: 800; padding: 4px 0 0; letter-spacing: -0.02em; line-height: 1.1">{{d.day}}</div>
+<div style="font-size: 12px; font-weight: 700; color: #575152; padding-bottom: 6px">{{d.wd}}</div>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<sc-if value="{{d.unknown}}" hint-placeholder-val="{{ false }}"><span style="font-family: Caveat, cursive; font-size: 22px; font-weight: 700; color: #575152">Presný deň zatiaľ nie je uvedený</span></sc-if>
+<sc-if value="{{d.past}}" hint-placeholder-val="{{ false }}"><span style="align-self: flex-start; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: #F0F5EE; color: #1F6A1E; border: 1.5px solid #B5D3B2">✓ Prebehlo</span></sc-if>
+<sc-for list="{{d.items}}" as="it" hint-placeholder-count="2">
+<div style="display: flex; gap: 14px; align-items: flex-start; justify-content: space-between; padding-bottom: 2px">
+<div style="min-width: 0">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><span style="font-weight: 800; font-size: 18px; line-height: 1.3">{{it.uni}}</span><span style="font-size: 11px; font-weight: 800; letter-spacing: 0.05em; padding: 3px 9px; border-radius: 999px; background: {{it.cBg}}; color: {{it.cFg}}">{{it.country}}</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; margin-top: 6px">
+<sc-for list="{{it.facs}}" as="f" hint-placeholder-count="2">
+<span style="display: flex; gap: 8px; align-items: center; font-size: 15px; color: #4A4546; flex-wrap: wrap"><span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 2px; background: #45B541; transform: rotate(45deg); flex: none"></span>{{f.name}}<sc-if value="{{f.hasTag}}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; font-weight: 700; background: #F6F2EA; color: #5E4A1F; border-radius: 6px; padding: 2px 8px">{{f.tag}}</span></sc-if></span>
+</sc-for>
+</div>
+<sc-if value="{{it.hasNote}}" hint-placeholder-val="{{ false }}"><div style="display: inline-block; margin-top: 8px; background: #FDF0F0; color: #A8222A; border-radius: 8px; font-size: 13px; font-weight: 700; padding: 4px 10px">{{it.note}}</div></sc-if>
+</div>
+<sc-if value="{{it.canPlan}}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{it.toggle}}" aria-pressed="{{it.inPlan}}" style="{{it.btnStyle}}">{{it.btnLabel}}</button></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+
+<sc-if value="{{empty}}" hint-placeholder-val="{{ false }}"><div style="text-align: center; padding: 40px 16px; font-family: Caveat, cursive; font-size: 30px; font-weight: 700; color: #575152">Pre tento výber nič nemáme. Skús inú krajinu.</div></sc-if>
+
+<!-- nezabudni -->
+<a class="lift stackm" href="Main.dc.html" style="text-decoration: none; color: #393536; position: relative; margin-top: 8px; background: #F0F5EE; border: 2px solid #393536; border-radius: 24px; padding: 28px 30px; box-shadow: 7px 7px 0 #CFE7CB; display: flex; gap: 24px; align-items: center; justify-content: space-between">
+<span style="position: absolute; top: -14px; left: 24px; background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 13px; padding: 4px 12px 5px; border-radius: 10px 6px 11px 5px; transform: rotate(-3deg)">Nezabudni</span>
+<span style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 22px; font-weight: 800">Výstava vysokých škôl Kam na vysokú</span>
+<span style="font-size: 16px; color: #4A4546">Bratislava · 26. 1. 2027 · 9:00 – 12:30 · vstup zadarmo</span>
+<span style="font-size: 14px; color: #575152"><strong>Čo sa spýtať na DOD:</strong> študijné programy · podmienky prijatia · ubytovanie · štipendiá</span>
+</span>
+<span style="flex: none; font-weight: 700; color: #1F6A1E">Viac o Roadshow →</span>
+</a>
+<p style="font-size: 13px; color: #575152; margin: 24px 0 0">Priebežne aktualizované · zmeny termínov vyhradené · nové termíny pribúdajú každý týždeň</p>
+</div>
+
+<!-- MÔJ PLÁN -->
+<aside aria-label="Môj DOD plán" style="flex: 0 1 330px; min-width: 0; width: 100%; box-sizing: border-box; background: #FFFBEF; border: 2px solid #393536; border-radius: 6px 22px 8px 20px; padding: 24px; box-shadow: 6px 6px 0 #CFE7CB; transform: rotate(1deg); position: sticky; top: 100px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="font-family: Caveat, cursive; font-size: 38px; font-weight: 700; margin: 0; line-height: 1">Môj DOD plán</h2>
+<span style="font-weight: 800; color: #C8232C">{{planCount}}</span>
+</div>
+<sc-if value="{{planEmpty}}" hint-placeholder-val="{{ true }}"><p style="font-size: 15px; color: #575152; line-height: 1.55; margin: 14px 0 0">Klikni pri škole na „+ do plánu“ a uložíme ti ju sem.</p></sc-if>
+<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px">
+<sc-for list="{{plan}}" as="p" hint-placeholder-count="2"><div style="display: flex; gap: 10px; font-size: 15px; line-height: 1.35"><span style="flex: none; font-weight: 800; color: #C8232C; min-width: 56px">{{p.date}}</span><span style="font-weight: 600">{{p.uni}}</span></div></sc-for>
+</div>
+<sc-if value="{{planFull}}" hint-placeholder-val="{{ false }}">
+<button type="button" style="margin-top: 18px; width: 100%; min-height: 48px; border: none; border-radius: 14px; background: #2B7F29; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Stiahnuť do kalendára (.ics)</button>
+<button type="button" style="margin-top: 8px; width: 100%; min-height: 44px; border: 1.5px solid #CFCAC8; border-radius: 14px; background: #FFFFFF; color: #393536; font-family: inherit; font-weight: 600; font-size: 14px; cursor: pointer">Stiahnuť ako PDF na vytlačenie</button>
+</sc-if>
+</aside>
+
+</div>
+</section>
+
+<!-- DOD PODĽA ŠKOLY -->
+<section style="background: #F7F5F3; border-top: 1px solid #E6E3E1">
+<div class="wrap padm" style="padding-top: 56px; padding-bottom: 64px">
+<span style="font-family: Caveat, cursive; font-size: 28px; font-weight: 700; color: #C8232C">Najčastejšie hľadané</span>
+<h2 class="h2m" style="font-size: 40px; line-height: 1.1; letter-spacing: -0.03em; margin: 4px 0 8px; font-weight: 800">DOD podľa vysokej školy</h2>
+<p style="font-size: 17px; color: #4A4546; margin: 0 0 24px; line-height: 1.55; max-width: 760px">Termíny dní otvorených dverí škôl, ktoré študenti hľadajú najčastejšie. Zoznam priebežne dopĺňame.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px">
+<article style="background: #FFFFFF; border: 1.5px solid #E6E3E1; border-radius: 18px; padding: 20px 22px"><h3 style="font-size: 20px; line-height: 1.25; margin: 0; font-weight: 800; color: #393536">DOD Univerzita Komenského 2026</h3><div style="font-size: 13px; font-weight: 700; color: #575152; margin-top: 4px">UK · Komenského · Bratislava</div><p style="font-size: 15px; line-height: 1.55; color: #4A4546; margin: 10px 0 0">Univerzita Komenského je najväčšia univerzita na Slovensku. Na celouniverzitnom DOD 25. 11. sa predstavia všetky fakulty naraz.</p><ul style="list-style: none; margin: 12px 0 0; padding: 0; font-size: 15px; color: #393536"><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">20. 11.</strong><span>Lekárska fakulta</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">25. 11.</strong><span>celouniverzitný DOD – všetky fakulty</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">26. 11.</strong><span>Právnická fakulta</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">3. 11.</strong><span>Fakulta sociálnych a ekonomických vied</span></li></ul></article>
+<article style="background: #FFFFFF; border: 1.5px solid #E6E3E1; border-radius: 18px; padding: 20px 22px"><h3 style="font-size: 20px; line-height: 1.25; margin: 0; font-weight: 800; color: #393536">DOD Masarykova univerzita (MUNI) 2026</h3><div style="font-size: 13px; font-weight: 700; color: #575152; margin-top: 4px">MUNI · Brno · Česko</div><p style="font-size: 15px; line-height: 1.55; color: #4A4546; margin: 10px 0 0">MUNI v Brne patrí medzi české univerzity, kam sa hlási veľa študentov zo Slovenska. Hlavný MUNI Open Day bol 7. 11., Fakulta informatiky má ďalší DOD 4. 12.</p><ul style="list-style: none; margin: 12px 0 0; padding: 0; font-size: 15px; color: #393536"><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">7. 11.</strong><span>MUNI Open Day – všetkých 10 fakúlt</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">4. 12.</strong><span>Fakulta informatiky</span></li></ul></article>
+<article style="background: #FFFFFF; border: 1.5px solid #E6E3E1; border-radius: 18px; padding: 20px 22px"><h3 style="font-size: 20px; line-height: 1.25; margin: 0; font-weight: 800; color: #393536">DOD Akadémia ozbrojených síl Liptovský Mikuláš 2027</h3><div style="font-size: 13px; font-weight: 700; color: #575152; margin-top: 4px">AOS · vojenská akadémia</div><p style="font-size: 15px; line-height: 1.55; color: #4A4546; margin: 10px 0 0">Akadémia ozbrojených síl gen. M. R. Štefánika v Liptovskom Mikuláši pozýva na DOD v piatok 19. 2. 2027 od 9:00 – ukážky výcviku, vojenská technika a stretnutia so študentmi. Na DOD sa treba vopred zaregistrovať cez formulár na aos.sk.</p><ul style="list-style: none; margin: 12px 0 0; padding: 0; font-size: 15px; color: #393536"><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">19. 2.</strong><span>DOD celej akadémie, od 9:00</span></li></ul></article>
+<article style="background: #FFFFFF; border: 1.5px solid #E6E3E1; border-radius: 18px; padding: 20px 22px"><h3 style="font-size: 20px; line-height: 1.25; margin: 0; font-weight: 800; color: #393536">DOD UKF Nitra 2026</h3><div style="font-size: 13px; font-weight: 700; color: #575152; margin-top: 4px">UKF · Univerzita Konštantína Filozofa v Nitre</div><p style="font-size: 15px; line-height: 1.55; color: #4A4546; margin: 10px 0 0">Na celouniverzitnom DOD UKF v Nitre sa predstavia všetky fakulty – učiteľstvo, humanitné, prírodné aj sociálne vedy.</p><ul style="list-style: none; margin: 12px 0 0; padding: 0; font-size: 15px; color: #393536"><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">19. 11.</strong><span>celouniverzitný DOD</span></li></ul></article>
+<article style="background: #FFFFFF; border: 1.5px solid #E6E3E1; border-radius: 18px; padding: 20px 22px"><h3 style="font-size: 20px; line-height: 1.25; margin: 0; font-weight: 800; color: #393536">DOD Žilinská univerzita 2026</h3><div style="font-size: 13px; font-weight: 700; color: #575152; margin-top: 4px">UNIZA · Žilina</div><p style="font-size: 15px; line-height: 1.55; color: #4A4546; margin: 10px 0 0">Žilinská univerzita robí DOD po fakultách, každá v inom termíne.</p><ul style="list-style: none; margin: 12px 0 0; padding: 0; font-size: 15px; color: #393536"><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">6. 11.</strong><span>Fakulta prevádzky a ekonomiky dopravy a spojov</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">11. 11.</strong><span>Stavebná fakulta</span></li><li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px dashed #E6E3E1"><strong style="flex: 0 0 64px; color: #C8232C">18. 11.</strong><span>Fakulta bezpečnostného inžinierstva</span></li></ul></article>
+</div>
+<p style="font-size: 16px; line-height: 1.7; color: #4A4546; margin: 28px 0 0"><strong style="color: #393536">DOD podľa mesta:</strong> <strong>Bratislava</strong> – Univerzita Komenského, STU, Paneurópska vysoká škola · <strong>Košice</strong> – Vysoká škola bezpečnostného manažérstva (3. 12.) · <strong>Žilina</strong> – Žilinská univerzita · <strong>Nitra</strong> – UKF (19. 11.), SPU (27. 11.) · <strong>Prešov</strong> – Prešovská univerzita (18. a 25. 11.) · <strong>Trenčín</strong> – Trenčianska univerzita A. Dubčeka. Všetky termíny nájdeš v kalendári vyššie.</p>
+</div>
+</section>
+
+<!-- CHCEM VYSTAVOVAŤ -->
+<section style="background: #FDF0F0; border-top: 1px solid #F5DADB">
+<div class="wrap padm stackm" style="padding-top: 56px; padding-bottom: 56px; display: flex; align-items: center; gap: 32px">
+<div aria-hidden="true" class="hide-m" style="flex: none; width: 96px; height: 96px; border-radius: 26px; background: #FFFFFF; border: 2px solid #393536; box-shadow: 4px 4px 0 #393536; display: flex; align-items: center; justify-content: center; transform: rotate(-5deg); position: relative"><span style="position: absolute; width: 44px; height: 44px; border-radius: 999px; background: #F6A8AC; right: 10px; bottom: 10px"></span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#393536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: relative"><path d="M3 21V9l9-5 9 5v12M3 21h18M8 21v-6h8v6M7 11h.01M12 11h.01M17 11h.01"></path></svg></div>
+<div style="flex: 1 1 auto; min-width: 0">
+<span style="font-family: Caveat, cursive; font-size: 28px; font-weight: 700; color: #C8232C">Pre vysoké školy, fakulty a inštitúcie</span>
+<h2 class="h2m" style="font-size: 40px; line-height: 1.1; letter-spacing: -0.03em; margin: 4px 0 8px; font-weight: 800">Chcete stretnúť maturantov na <span style="background: #D42A33; color: #FFFFFF; font-style: italic; padding: 0 12px 3px; border-radius: 14px 8px 15px 8px; display: inline-block; transform: rotate(-2deg)">Roadshow</span>?</h2>
+<p style="font-size: 17px; color: #4A4546; margin: 0; line-height: 1.55">9 miest, tisíce študentov a celé triedy s výchovnými poradcami. Pozrite si balíky a pošlite nám záujem.</p>
+</div>
+<a href="Chcem-vystavovat.dc.html" style="flex: none; background: #D42A33; color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 17px; padding: 17px 28px; border-radius: 16px; box-shadow: 4px 4px 0 #393536; white-space: nowrap">Chcem byť vystavovateľ →</a>
+</div>
+</section>
+
+<!-- PÄTIČKA -->
+<footer style="background: #EEF4EC; color: #4A4546; border-top: 1px solid #DDE8DA; position: relative; overflow: hidden">
+<div class="wrap" style="padding-top: 56px; padding-bottom: 0; position: relative">
+
+<div style="background: #FFFFFF; border: 1.5px solid #DDE8DA; border-radius: 24px; padding: 22px 24px 18px; margin-bottom: 56px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 18px"><span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap"><span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 15px; padding: 4px 12px 5px; border-radius: 10px 6px 11px 5px; transform: rotate(-3deg)">Roadshow</span><span style="font-weight: 800; font-size: 18px; color: #393536">Trasa 2026/27</span></span><a href="Main.dc.html#vystavy" style="font-weight: 700; font-size: 14px; text-decoration: none">Všetky zastávky →</a></div>
+<div style="overflow-x: auto; padding-bottom: 4px"><div style="position: relative; display: flex; min-width: 900px"><span aria-hidden="true" style="position: absolute; left: 46px; right: 46px; top: 11px; border-top: 2.5px dashed #B5D3B2"></span><a href="Vysledky-Trencin.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Trenčín</span><span style="font-size: 12px; color: #575152">16. 9.</span></a><a href="Vysledky-Zilina.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Žilina</span><span style="font-size: 12px; color: #575152">17. 9.</span></a><a href="Vysledky-Trnava.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Trnava</span><span style="font-size: 12px; color: #575152">18. 9.</span></a><a href="Vysledky-Banska-Bystrica.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Banská Bystrica</span><span style="font-size: 12px; color: #575152">24. 9.</span></a><a href="Vysledky-Poprad.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Poprad</span><span style="font-size: 12px; color: #575152">29. 9.</span></a><a href="Vysledky-Presov.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Prešov</span><span style="font-size: 12px; color: #575152">30. 9.</span></a><a href="Vysledky-Kosice.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #575152; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #B5D3B2; color: #2B7F29; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center">✓</span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Košice</span><span style="font-size: 12px; color: #575152">1. 10.</span></a><a href="Zastavka-Prievidza.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #393536; position: relative; z-index: 1; text-align: center"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D42A33; border: 3px solid #FFFFFF; box-shadow: 0 0 0 2px #D42A33; display: block"></span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Prievidza</span><span style="font-size: 12px; color: #575152">1. 12.</span><span style="font-family: Caveat, cursive; font-size: 18px; font-weight: 700; color: #C8232C; line-height: 1">Najbližšia!</span></a><a href="Zastavka-Bratislava.dc.html" style="flex: 1 0 92px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: #393536; position: relative; z-index: 1; text-align: center"><span style="width: 22px; height: 22px; border-radius: 999px; background: #FFFFFF; border: 2px solid #2B7F29; display: block"></span><span style="font-size: 13px; font-weight: 700; line-height: 1.2">Bratislava</span><span style="font-size: 12px; color: #575152">26. 1.</span></a></div></div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><img src="{{KNV_ASSETS}}/logo-ikona.png" alt="" style="width: 56px; height: auto; display: block"><span style="font-weight: 800; font-size: 22px; color: #393536">Kam na vysokú</span></a>
+<span style="font-size: 15px; line-height: 1.6">Výstava vysokých škôl a časopis Kam po strednej pre študentov stredných škôl.</span>
+<span style="font-family: Caveat, cursive; font-size: 24px; font-weight: 700; color: #2B7F29; line-height: 1; transform: rotate(-2deg); align-self: flex-start">Sleduj nás, nič nezmeškáš</span>
+<div style="display: flex; gap: 8px"><a href="https://www.instagram.com/kamnavysoku/" target="_blank" rel="noopener" aria-label="Instagram" style="width: 42px; height: 42px; border-radius: 14px; background: #FFFFFF; border: 1.5px solid #B5D3B2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B7F29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM17.5 6.5h.01"></path></svg></a><a href="https://www.facebook.com/kamnavysoku/" target="_blank" rel="noopener" aria-label="Facebook" style="width: 42px; height: 42px; border-radius: 14px; background: #FFFFFF; border: 1.5px solid #B5D3B2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B7F29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px"><span style="color: #393536; font-weight: 800; font-size: 16px">Pre študentov</span><a href="Roadshow-pas.dc.html" style="color: #4A4546; text-decoration: none">Roadshow a Roadshow pas</a><a href="DOD.dc.html" style="color: #4A4546; text-decoration: none">Dni otvorených dverí</a><a href="Co-studovat.dc.html" style="color: #4A4546; text-decoration: none">Čo študovať</a><a href="Zahranicie.dc.html" style="color: #4A4546; text-decoration: none">Štúdium v zahraničí</a><a href="Mesta.dc.html" style="color: #4A4546; text-decoration: none">Študentské mestá</a><a href="Stipendia.dc.html" style="color: #4A4546; text-decoration: none">Štipendiá</a><a href="Slovnik.dc.html" style="color: #4A4546; text-decoration: none">Slovník vysokoškoláka</a><a href="Alternativy.dc.html" style="color: #4A4546; text-decoration: none">Nechcem hneď na vysokú</a><a href="Rady.dc.html" style="color: #4A4546; text-decoration: none">Rady a videá</a><a href="https://www.jobspot.sk/" style="color: #4A4546; text-decoration: none">Hľadáš prácu? JobSpoT →</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px"><span style="color: #393536; font-weight: 800; font-size: 16px">Pre školy a partnerov</span><a href="Poradcovia.dc.html" style="color: #4A4546; text-decoration: none">Výchovní poradcovia</a><a href="Rodicia.dc.html" style="color: #4A4546; text-decoration: none">Pre rodičov</a><a href="Vystavovatelia.dc.html" style="color: #4A4546; text-decoration: none">Všetci vystavovatelia</a><a href="Chcem-vystavovat.dc.html" style="color: #4A4546; text-decoration: none">Chcem byť vystavovateľ</a><a href="Casopis.dc.html" style="color: #4A4546; text-decoration: none">Časopis Kam po strednej</a><a href="Kontakt.dc.html" style="color: #4A4546; text-decoration: none">Kontakt</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="color: #393536; font-weight: 800; font-size: 16px">Pre vystavovateľov</span>
+<a href="Chcem-vystavovat.dc.html" style="text-decoration: none; color: #393536; background: #FFFFFF; border: 2px solid #393536; border-radius: 6px 20px 8px 18px; padding: 18px; box-shadow: 4px 4px 0 #F8CFD1; transform: rotate(-1deg); display: flex; flex-direction: column; gap: 8px"><span style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><img src="{{KNV_ASSETS}}/logo-ikona.png" alt="" style="width: 40px; height: auto; display: block"><span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 13px; padding: 3px 10px 4px; border-radius: 10px 6px 11px 5px; transform: rotate(3deg)">Roadshow 2026/27</span></span><span style="font-weight: 800; font-size: 17px; line-height: 1.3">Prihláška pre vysoké školy, fakulty a inštitúcie</span><span style="font-size: 14px; line-height: 1.5; color: #4A4546">9 miest · tisíce maturantov · balíky od jednej zastávky</span><span style="font-weight: 700; color: #C8232C">Chcem byť vystavovateľ →</span></a>
+</div>
+</div>
+
+<div class="stackm" style="border-top: 1px solid #DDE8DA; margin-top: 48px; padding-top: 22px; display: flex; justify-content: space-between; gap: 16px; font-size: 14px; position: relative; z-index: 1">
+<span>© 2026 · Organizuje Národné kariérne centrum · <a href="https://www.nakac.sk/">nakac.sk</a></span>
+<span style="display: flex; gap: 20px; flex-wrap: wrap"><a href="Ochrana-udajov.dc.html" style="color: #4A4546">Ochrana osobných údajov</a><a href="Cookies.dc.html" style="color: #4A4546">Cookies</a></span>
+</div>
+<div aria-hidden="true" style="font-family: 'Bricolage Grotesque', 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-style: italic; font-size: clamp(72px, 17vw, 230px); line-height: 0.8; letter-spacing: -0.05em; color: #DDE8DA; text-align: center; white-space: nowrap; margin: 18px 0 -0.12em; user-select: none">Roadshow</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5200}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { countries: ['SK', 'CZ', 'NL'], month: 'all', plan: ['n7-0', 'n27-1'] };
+  }
+  renderVals() {
+    var self = this;
+    var st = this.state;
+    var UK = 'Univerzita Komenského v Bratislave', STU = 'Slovenská technická univerzita v Bratislave', UNIZA = 'Žilinská univerzita v Žiline', TNUAD = 'Trenčianska univerzita Alexandra Dubčeka v Trenčíne', PEVS = 'Paneurópska vysoká škola', MUNI = 'Masarykova univerzita', VUT = 'Vysoké učení technické v Brně', NHL = 'NHL Stenden University of Applied Sciences', PU = 'Prešovská univerzita v Prešove', VSCHT = 'Vysoká škola chemicko-technologická v Praze', UNICORN = 'Unicorn University', AOS = 'Akadémia ozbrojených síl gen. M. R. Štefánika';
+    var D = [
+      [0, 3, 'UTO', [[UK, 'SK', [['Fakulta sociálnych a ekonomických vied']]]]],
+      [0, 6, 'PIA', [[UNIZA, 'SK', [['Fakulta prevádzky ekonomiky dopravy a spojov']]]]],
+      [0, 7, 'SOB', [[MUNI, 'CZ', [['Všetkých 10 fakúlt', 'MUNI Open Day'], ['Fakulta informatiky']]]]],
+      [0, 9, 'PON', [[PEVS, 'SK', [['Fakulta práva'], ['Fakulta psychológie']]]]],
+      [0, 10, 'UTO', [[PEVS, 'SK', [['Fakulta masmédií'], ['Fakulta ekonómie a podnikania'], ['Fakulta informatiky']]]]],
+      [0, 11, 'STR', [[UNIZA, 'SK', [['Stavebná fakulta']]]]],
+      [0, 14, 'SOB', [[STU, 'SK', [['Strojnícka fakulta']]]]],
+      [0, 16, 'PON', [[TNUAD, 'SK', [['Fakulta špeciálnej techniky'], ['Katedra politológie']]]]],
+      [0, 17, 'UTO', [[STU, 'SK', [['Fakulta architektúry a dizajnu']]], [NHL, 'NL', [['Rôzne fakulty, prednáška v Bratislave', 'InterStudy']]]]],
+      [0, 18, 'STR', [['Univerzita sv. Cyrila a Metoda v Trnave', 'SK', [['Celouniverzitný']], 'Na akciu „Zaži deň“ je potrebná registrácia.'], [UNIZA, 'SK', [['Fakulta bezpečnostného inžinierstva']]], [TNUAD, 'SK', [['Fakulta sociálno-ekonomických vzťahov']]], [PU, 'SK', [['Celouniverzitné DOD', 'plánované']]], [NHL, 'NL', [['Rôzne fakulty, prednáška v Košiciach', 'InterStudy']]]]],
+      [0, 19, 'ŠTV', [['Univerzita Konštantína Filozofa v Nitre', 'SK', [['Celouniverzitný DOD']]]]],
+      [0, 20, 'PIA', [[VSCHT, 'CZ', [['Celouniverzitné DOD']]], ['Česká zemědělská univerzita v Praze', 'CZ', [['Celá univerzita']]], [UK, 'SK', [['Lekárska fakulta']]]]],
+      [0, 21, 'SOB', [[VSCHT, 'CZ', [['Celouniverzitné DOD']]]]],
+      [0, 25, 'STR', [[PU, 'SK', [['Pravoslávna bohoslovecká fakulta', 'od 9:00 hod.']]], [UK, 'SK', [['Celouniverzitné DOD']]]]],
+      [0, 26, 'ŠTV', [[UK, 'SK', [['Právnická fakulta']]], [VUT, 'CZ', [['Fakulta chemická']]]]],
+      [0, 27, 'PIA', [['Slovenská poľnohospodárska univerzita v Nitre', 'SK', [['Fakulta biotechnológie a potravinárstva']]], [VUT, 'CZ', [['Fakulta informačních technologií']]], ['Univerzita Palackého v Olomouci', 'CZ', [['Všetky fakulty']]]]],
+      [0, 28, 'SOB', [['Univerzita Hradec Králové', 'CZ', [['Celouniverzitný']]]]],
+      [0, 0, 'NOV', [[TNUAD, 'SK', [['Fakulta priemyselných technológií'], ['Fakulta zdravotníctva']]]]],
+      [1, 2, 'STR', [[UNICORN, 'CZ', [['Celá vysoká škola', 'v češtine']]]]],
+      [1, 3, 'ŠTV', [['Vysoká škola bezpečnostného manažérstva v Košiciach', 'SK', [['Celá vysoká škola']]]]],
+      [1, 4, 'PIA', [['Univerzita J. Selyeho', 'SK', [['Reformovaná teologická fakulta']]], [MUNI, 'CZ', [['Fakulta informatiky']]]]],
+      [1, 11, 'PIA', [[STU, 'SK', [['Fakulta informatiky a informačných technológií']]], [UNICORN, 'CZ', [['Celá vysoká škola', 'v angličtine']]]]],
+      [1, 18, 'PIA', [['Vysoká škola ekonomická v Praze', 'CZ', [['Celouniverzitné DOD']]]]],
+      [3, 19, 'PIA', [[AOS, 'SK', [['Celá akadémia, Liptovský Mikuláš', 'od 9:00, registrácia online']]]]]
+    ];
+    var CN = { SK: ['SLOVENSKO', '#F0F5EE', '#1F6A1E'], CZ: ['ČESKO', '#FDF0F0', '#A8222A'], NL: ['HOLANDSKO', '#F6F2EA', '#5E4A1F'] };
+    var MON = ['NOV', 'DEC', 'JAN', 'FEB'];
+    var MNAME = ['November 2026', 'December 2026', 'Január 2027', 'Február 2027'];
+    var shadows = ['#CFE7CB', '#F8CFD1', '#F2E8DA'];
+    var rots = ['-3deg', '2deg', '-1.5deg', '3deg'];
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var plan = [];
+    var grand = 0;
+    D.forEach(function (d) { d[3].forEach(function (it) { grand += it[2].length; }); });
+    var idx = 0;
+    var inviteDone = false;
+    var monthsOut = [0, 1, 2, 3].filter(function (m) { return (st.month === 'all' || st.month === m) && D.some(function (d) { return d[0] === m; }); }).map(function (m) {
+      var count = 0;
+      var days = D.filter(function (d) { return d[0] === m; }).map(function (d) {
+        var unknown = d[1] === 0;
+        var past = !unknown && new Date(2026, 10 + m, d[1]) < today;
+        var items = d[3].map(function (it, k) {
+          var id = ['n', 'd', 'j', 'f'][m] + d[1] + '-' + k;
+          var inPlan = st.plan.indexOf(id) !== -1;
+          if (inPlan) { plan.push({ date: unknown ? 'NOV ?' : d[1] + '. ' + MON[m], uni: it[0] }); }
+          return { show: st.countries.indexOf(it[1]) !== -1, uni: it[0], country: CN[it[1]][0], cBg: CN[it[1]][1], cFg: CN[it[1]][2], hasNote: !!it[3], note: it[3] || '', canPlan: !past, inPlan: inPlan, nFac: it[2].length,
+            facs: it[2].map(function (f) { return { name: f[0], tag: f[1] || '', hasTag: !!f[1] }; }),
+            btnLabel: inPlan ? '✓ v pláne' : '+ do plánu',
+            btnStyle: 'flex: none; font-family: inherit; font-size: 13px; font-weight: 700; padding: 8px 14px; min-height: 40px; border-radius: 12px; cursor: pointer; white-space: nowrap; ' + (inPlan ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #1F6A1E; border: 1.5px dashed #45B541;'),
+            toggle: function () { var p = self.state.plan.slice(); var x = p.indexOf(id); if (x === -1) { p.push(id); } else { p.splice(x, 1); } self.setState({ plan: p }); } };
+        }).filter(function (it) { return it.show; });
+        items.forEach(function (it) { count += it.nFac; });
+        var i = idx++;
+        return { mon: unknown ? 'NOV' : MON[m], day: unknown ? '?' : String(d[1]), wd: unknown ? '' : d[2], unknown: unknown, past: past, op: past ? '0.6' : '1', shadow: shadows[i % 3], rot: rots[i % 4], items: items };
+      }).filter(function (d) { return d.items.length > 0; });
+      days.forEach(function (d) { d.invite = false; if (!d.past && !d.unknown && !inviteDone) { d.invite = true; inviteDone = true; } });
+      return { name: MNAME[m], count: count + (count === 1 ? ' podujatie' : (count > 1 && count < 5 ? ' podujatia' : ' podujatí')), days: days };
+    }).filter(function (mo) { return mo.days.length > 0; });
+    var countryChips = ['SK', 'CZ', 'NL'].map(function (k) {
+      var on = st.countries.indexOf(k) !== -1;
+      return { label: CN[k][0], on: on,
+        style: 'font-family: inherit; font-size: 12px; font-weight: 800; letter-spacing: 0.05em; padding: 8px 14px; min-height: 40px; border-radius: 999px; cursor: pointer; ' + (on ? 'background: ' + CN[k][1] + '; color: ' + CN[k][2] + '; border: 1.5px solid ' + CN[k][2] + ';' : 'background: #FFFFFF; color: #9A9495; border: 1.5px dashed #CFCAC8;'),
+        toggle: function () { var c = self.state.countries.slice(); var x = c.indexOf(k); if (x === -1) { c.push(k); } else { c.splice(x, 1); } self.setState({ countries: c }); } };
+    });
+    var monthChips = [['all', 'Všetko'], [0, 'November'], [1, 'December'], [3, 'Február']].map(function (x) {
+      var on = st.month === x[0];
+      return { label: x[1], pick: function () { self.setState({ month: x[0] }); }, style: 'font-family: inherit; font-size: 14px; font-weight: 600; padding: 8px 16px; min-height: 40px; border-radius: 999px; cursor: pointer; ' + (on ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #393536; border: 1.5px solid #CFCAC8;') };
+    });
+    var STOPD = [['Prievidza', '2026-12-01', '1. 12. 2026', 'Zastavka-Prievidza.dc.html'], ['Bratislava', '2027-01-26', '26. 1. 2027', 'Zastavka-Bratislava.dc.html']];
+    var tday = new Date(); tday.setHours(0, 0, 0, 0);
+    var near = STOPD[STOPD.length - 1];
+    for (var si = 0; si < STOPD.length; si++) { if (new Date(STOPD[si][1] + 'T23:59:59') >= tday) { near = STOPD[si]; break; } }
+    return {
+      nearCity: near[0], nearDate: near[2], nearUrl: near[3],
+      totalLabel: grand + ' dní otvorených dverí',
+      countryChips: countryChips, monthChips: monthChips, months: monthsOut, empty: monthsOut.length === 0,
+      plan: plan, planCount: plan.length + ' ' + (plan.length === 1 ? 'termín' : (plan.length > 1 && plan.length < 5 ? 'termíny' : 'termínov')),
+      planEmpty: plan.length === 0, planFull: plan.length > 0
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Lišta cookies */
+#knv-cc{position:fixed;left:16px;right:16px;bottom:16px;z-index:100000;display:flex;justify-content:center;pointer-events:none;font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+#knv-cc .knv-cc-box{pointer-events:auto;max-width:760px;width:100%;background:#fff;color:#393536;border:2px solid #393536;border-radius:8px 22px 10px 20px;box-shadow:5px 5px 0 #CFE7CB;padding:18px 20px;font-size:15px;line-height:1.5}
+#knv-cc .knv-cc-h{display:block;font-size:17px;font-weight:800;margin-bottom:4px}
+#knv-cc p{margin:0 0 12px}#knv-cc a{color:#2B7F29;font-weight:700}
+#knv-cc .knv-cc-opts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 12px}#knv-cc .knv-cc-opts[hidden]{display:none}
+#knv-cc label{display:flex;align-items:center;gap:6px;font-weight:600}#knv-cc input{width:18px;height:18px;accent-color:#2B7F29}
+#knv-cc .knv-cc-btns{display:flex;flex-wrap:wrap;gap:8px}
+#knv-cc button{font:inherit;font-weight:700;min-height:44px;padding:8px 18px;border-radius:12px;border:2px solid #393536;background:#fff;color:#393536;cursor:pointer}
+#knv-cc button.knv-cc-p{background:#2B7F29;border-color:#2B7F29;color:#fff}
+@media (max-width:560px){#knv-cc button{flex:1 1 100%}}
+#knv-cc *{box-sizing:border-box}

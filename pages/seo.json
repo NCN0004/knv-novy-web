@@ -1,0 +1,612 @@
+{
+ "Main": {
+  "t": "Roadshow 2026 Kam na vysokú – výstava vysokých škôl, vstup zadarmo",
+  "d": "Roadshow 2026/27 Kam na vysokú: výstava vysokých škôl v Prievidzi 1. 12. 2026 a v Bratislave 26. 1. 2027. Vstup zadarmo, bezplatná vstupenka online.",
+  "k": [
+   "roadshow 2026",
+   "kam na vysokú",
+   "výstava vysokých škôl",
+   "burza vysokých škôl 2026",
+   "veľtrh vysokých škôl",
+   "vysoké školy na Slovensku"
+  ],
+  "og": "Vysokú školu si nevyberaj naslepo",
+  "sub": "Roadshow v 9 mestách · vstup zadarmo"
+ },
+ "Zastavka-Prievidza": {
+  "t": "Výstava vysokých škôl Prievidza 1. 12. 2026 | Kam na vysokú",
+  "d": "Výstava a burza vysokých škôl v Prievidzi 1. decembra 2026, Hotel Magura, 9:00 – 12:30. Univerzity na jednom mieste, prednášky a poradenstvo. Vstup zadarmo.",
+  "k": [
+   "výstava vysokých škôl Prievidza",
+   "veľtrh vysokých škôl Prievidza",
+   "Kam na vysokú Prievidza",
+   "vysoké školy Prievidza 2026",
+   "burza vysokých škôl 2026"
+  ],
+  "og": "Výstava vysokých škôl Prievidza",
+  "sub": "1. decembra 2026 · Hotel Magura · vstup zadarmo",
+  "schema": "event",
+  "faq": [
+   {
+    "q": "Je vstup naozaj zadarmo?",
+    "a": "Áno. Vstup na každú zastávku Roadshow je pre študentov, rodičov aj učiteľov zadarmo."
+   },
+   {
+    "q": "Musím sa registrovať?",
+    "a": "Nemusíš, ak prídeš sám. Kľudne aj bez učiteľa. S lístkom ti však pošleme pripomienku aj zoznam vystavovateľov."
+   },
+   {
+    "q": "Môžem prísť s rodičmi?",
+    "a": "Jasné. Rodičia sa často pýtajú na veci, na ktoré by si zabudol – ubytovanie, financie, štipendiá."
+   },
+   {
+    "q": "Ako prihlásim celú triedu?",
+    "a": "Školy, ktoré prídu s maturantmi, nám dajú vedieť cez krátky formulár (zaberie asi minútu). V registrácii vyber „Prihlasujem triedu“ a vyplň počet žiakov a približný čas príchodu."
+   }
+  ]
+ },
+ "Zastavka-Bratislava": {
+  "t": "Výstava vysokých škôl Bratislava 26. 1. 2027 | Kam na vysokú",
+  "d": "Výstava a burza vysokých škôl v Bratislave 26. januára 2027, Dom športu, 9:00 – 12:30. Slovenské a české univerzity, prednášky, poradenstvo. Vstup zadarmo.",
+  "k": [
+   "výstava vysokých škôl Bratislava",
+   "veľtrh vysokých škôl Bratislava 2027",
+   "Kam na vysokú Bratislava",
+   "vysoké školy Bratislava",
+   "burza vysokých škôl 2027"
+  ],
+  "og": "Výstava vysokých škôl Bratislava",
+  "sub": "26. januára 2027 · Dom športu · vstup zadarmo",
+  "schema": "event",
+  "faq": [
+   {
+    "q": "Je vstup naozaj zadarmo?",
+    "a": "Áno. Vstup na každú zastávku Roadshow je pre študentov, rodičov aj učiteľov zadarmo."
+   },
+   {
+    "q": "Musím sa registrovať?",
+    "a": "Nemusíš, ak prídeš sám. Kľudne aj bez učiteľa. S lístkom ti však pošleme pripomienku aj zoznam vystavovateľov."
+   },
+   {
+    "q": "Môžem prísť s rodičmi?",
+    "a": "Jasné. Rodičia sa často pýtajú na veci, na ktoré by si zabudol – ubytovanie, financie, štipendiá."
+   },
+   {
+    "q": "Ako prihlásim celú triedu?",
+    "a": "Školy, ktoré prídu s maturantmi, nám dajú vedieť cez krátky formulár (zaberie asi minútu). V registrácii vyber „Prihlasujem triedu“ a vyplň počet žiakov a približný čas príchodu."
+   }
+  ]
+ },
+ "Chcem-vystavovat": {
+  "t": "Vystavovať na Roadshow Kam na vysokú – pre vysoké školy",
+  "d": "Stretnite tisíce maturantov a výchovných poradcov v 9 mestách. Stánok na výstave vysokých škôl, prezentácia v časopise Kam po strednej. Pošlite záujem.",
+  "k": [
+   "nábor študentov vysoká škola",
+   "prezentácia vysokej školy stredné školy",
+   "veľtrh vysokých škôl vystavovateľ",
+   "Kam na vysokú vystavovatelia"
+  ],
+  "og": "Chcete stretnúť maturantov?",
+  "sub": "Stánok na Roadshow · 9 miest · tisíce študentov",
+  "schema": "faq",
+  "faq": [
+   {
+    "q": "Môže prísť viac fakúlt pod jednou univerzitou?",
+    "a": "Áno. Spoločný stánok môže zastupovať viac fakúlt a každá bude uvedená ako samostatný vystavovateľ."
+   }
+  ]
+ },
+ "Vystavovatelia": {
+  "t": "Vystavovatelia výstavy Kam na vysokú 2026/27",
+  "d": "Zoznam univerzít, fakúlt a inštitúcií, ktoré vystavujú na Roadshow Kam na vysokú 2026/27. Pozri, kto príde do tvojho mesta, a priprav si otázky.",
+  "k": [
+   "vystavovatelia Kam na vysokú",
+   "univerzity na výstave",
+   "zoznam vysokých škôl Slovensko"
+  ],
+  "og": "Všetci vystavovatelia",
+  "sub": "Univerzity, fakulty a inštitúcie 2026/27"
+ },
+ "Co-studovat": {
+  "t": "Čo študovať na vysokej škole? 14 smerov štúdia | Kam na vysokú",
+  "d": "Nevieš, čo študovať? Prejdi si 14 smerov – od informatiky po medicínu. Čo sa učí, aké sú prijímačky, uplatnenie a kde sa dá študovať na Slovensku.",
+  "k": [
+   "čo študovať",
+   "čo študovať na vysokej škole",
+   "výber odboru",
+   "študijné smery",
+   "aký odbor si vybrať"
+  ],
+  "og": "Čo ťa baví? Nájdeme ti smer.",
+  "sub": "14 smerov štúdia · prijímačky · uplatnenie"
+ },
+ "DOD": {
+  "t": "DOD vysoké školy 2026 – kalendár dní otvorených dverí",
+  "d": "DOD vysoké školy 2026: termíny dní otvorených dverí vysokých škôl a fakúlt na Slovensku aj v Česku na jednom mieste. Filter podľa mesta a mesiaca.",
+  "k": [
+   "DOD vysoké školy 2026",
+   "dni otvorených dverí vysoké školy",
+   "DOD Univerzita Komenského",
+   "DOD Masarykova univerzita",
+   "MUNI DOD",
+   "DOD Akadémia ozbrojených síl",
+   "UKF DOD",
+   "DOD Žilinská univerzita",
+   "DOD 2027"
+  ],
+  "og": "Dni otvorených dverí",
+  "sub": "Kalendár DOD vysokých škôl 2026/27"
+ },
+ "Casopis": {
+  "t": "Časopis Kam po strednej – sprievodca výberom vysokej školy",
+  "d": "Kam po strednej je časopis pre maturantov a výchovných poradcov: prehľad vysokých škôl, prijímačky, štipendiá a príbehy študentov. Objednajte pre školu.",
+  "k": [
+   "časopis Kam po strednej",
+   "Kam po strednej",
+   "časopis pre maturantov",
+   "prehľad vysokých škôl"
+  ],
+  "og": "Časopis Kam po strednej",
+  "sub": "Pre maturantov a výchovných poradcov"
+ },
+ "Rady": {
+  "t": "Rady pre maturantov – prijímačky, štúdium, internát | Kam na vysokú",
+  "d": "Praktické rady a skúsenosti študentov: ako si vybrať vysokú školu, zvládnuť prijímačky, stres pred testom, život na internáte a štipendiá.",
+  "k": [
+   "rady pre maturantov",
+   "prijímačky na vysokú školu",
+   "ako si vybrať vysokú školu",
+   "život na internáte"
+  ],
+  "og": "Rady na cestu",
+  "sub": "Prijímačky · internát · štipendiá · skúsenosti",
+  "schema": "collection"
+ },
+ "Clanok": {
+  "t": "Šablóna článku – Kam na vysokú",
+  "d": "Ukážka šablóny článku.",
+  "k": [],
+  "og": "Kam na vysokú",
+  "sub": "",
+  "noindex": true
+ },
+ "Poradcovia": {
+  "t": "Pre výchovných poradcov – prihláste triedu | Kam na vysokú",
+  "d": "Prihláste celú triedu na výstavu vysokých škôl Kam na vysokú jedným formulárom. Vstup zadarmo, materiály pre kariérne poradenstvo a časopis pre školu.",
+  "k": [
+   "výchovný poradca",
+   "kariérne poradenstvo stredná škola",
+   "exkurzia výstava vysokých škôl",
+   "prihlásenie triedy"
+  ],
+  "og": "Celá trieda na Roadshow",
+  "sub": "Pre výchovných a kariérnych poradcov"
+ },
+ "Rodicia": {
+  "t": "Pre rodičov: ako pomôcť dieťaťu vybrať vysokú školu",
+  "d": "Vaše dieťa si vyberá vysokú školu? Čo sledovať, koľko stojí štúdium, štipendiá a termíny prihlášok. Praktický sprievodca pre rodičov maturantov.",
+  "k": [
+   "výber vysokej školy rodičia",
+   "koľko stojí vysoká škola",
+   "rodičia maturantov"
+  ],
+  "og": "Ako pomôcť dieťaťu s výberom vysokej?",
+  "sub": "Sprievodca pre rodičov maturantov",
+  "schema": "faq",
+  "faq": [
+   {
+    "q": "Môžem ísť na Roadshow s dieťaťom?",
+    "a": "Určite. Vstup je zadarmo pre študentov aj rodičov a mnohí rodičia chodia."
+   },
+   {
+    "q": "Ako vyberieme medzi Slovenskom a Českom?",
+    "a": "Porovnajte smery, mestá a náklady. Na Roadshow vystavujú slovenské aj české univerzity, takže ich môžete porovnať na jednom mieste."
+   },
+   {
+    "q": "Čo ak dieťa nevie, čo chce študovať?",
+    "a": "Je to bežné. Pomôže kvíz, poradenský kútik na Roadshow aj stránka o cestách po strednej, keď nejde hneď na vysokú."
+   }
+  ]
+ },
+ "Kontakt": {
+  "t": "Kontakt – Kam na vysokú | Národné kariérne centrum",
+  "d": "Kontakt na organizátora výstavy Kam na vysokú a časopisu Kam po strednej – Národné kariérne centrum. Pre študentov, školy aj vystavovateľov.",
+  "k": [
+   "Kam na vysokú kontakt",
+   "Národné kariérne centrum kontakt"
+  ],
+  "og": "Napíš nám",
+  "sub": "Národné kariérne centrum · kamnavysoku.sk",
+  "schema": "contact"
+ },
+ "Zahranicie": {
+  "t": "Štúdium v zahraničí po maturite – Česko, Európa, svet",
+  "d": "Ako ísť študovať do zahraničia po maturite: Česko, Rakúsko, Holandsko, Británia aj zámorie. Prijímačky, ceny, štipendiá a skúsenosti študentov.",
+  "k": [
+   "štúdium v zahraničí",
+   "štúdium v zahraničí po maturite",
+   "štúdium v Česku",
+   "vysoká škola v zahraničí"
+  ],
+  "og": "Štúdium v zahraničí",
+  "sub": "Podmienky · ceny · štipendiá · skúsenosti"
+ },
+ "Alternativy": {
+  "t": "Nechcem hneď na vysokú – čo po maturite? | Kam na vysokú",
+  "d": "Nechceš hneď na vysokú? Gap year, práca, dobrovoľníctvo, nadstavba, vyššie odborné štúdium či kurzy. Prehľad možností po maturite a ich plusy a mínusy.",
+  "k": [
+   "čo po maturite",
+   "gap year",
+   "nechcem ísť na vysokú",
+   "možnosti po maturite"
+  ],
+  "og": "Nechcem hneď na vysokú",
+  "sub": "Gap year, práca a iné cesty po maturite"
+ },
+ "Mesta": {
+  "t": "Študentské mestá na Slovensku – kde sa oplatí študovať",
+  "d": "Porovnaj študentské mestá na Slovensku: univerzity, ubytovanie, ceny, doprava a študentský život v Bratislave, Košiciach, Žiline, Nitre a ďalších.",
+  "k": [
+   "študentské mestá",
+   "kde študovať na Slovensku",
+   "študentský život",
+   "univerzitné mestá Slovensko"
+  ],
+  "og": "Študentské mestá",
+  "sub": "Kde sa oplatí študovať na Slovensku"
+ },
+ "Kalkulacka": {
+  "t": "Kalkulačka nákladov – koľko stojí mesiac na vysokej škole",
+  "d": "Spočítaj si, koľko ťa bude stáť mesiac na vysokej škole: internát alebo podnájom, strava, doprava, učebnice a voľný čas. Rýchla kalkulačka pre študentov.",
+  "k": [
+   "koľko stojí vysoká škola",
+   "náklady na štúdium",
+   "koľko stojí internát",
+   "kalkulačka študent"
+  ],
+  "og": "Koľko ma bude stáť mesiac na výške?",
+  "sub": "Kalkulačka nákladov na štúdium"
+ },
+ "Stipendia": {
+  "t": "Štipendiá pre vysokoškolákov 2026/27 – sociálne, motivačné",
+  "d": "Prehľad štipendií pre vysokoškolákov na Slovensku: sociálne, motivačné, mimoriadne, firemné a zahraničné. Kto má nárok, koľko a ako požiadať.",
+  "k": [
+   "štipendiá pre vysokoškolákov",
+   "sociálne štipendium",
+   "motivačné štipendium",
+   "štipendium do zahraničia"
+  ],
+  "og": "Štipendiá pre vysokoškolákov",
+  "sub": "Sociálne · motivačné · firemné · zahraničné"
+ },
+ "Slovnik": {
+  "t": "Slovník vysokoškoláka – kredity, AIS, index, imatrikulácia",
+  "d": "Kredity, AIS, semester, skúškové, imatrikulácia, index, promócie. Slovník pojmov, ktoré musíš poznať ešte pred nástupom na vysokú školu.",
+  "k": [
+   "slovník vysokoškoláka",
+   "kreditový systém vysoká škola",
+   "čo je AIS",
+   "pojmy na vysokej škole"
+  ],
+  "og": "Slovník vysokoškoláka",
+  "sub": "Pojmy, ktoré musíš poznať pred nástupom"
+ },
+ "Pytaj-sa": {
+  "t": "Pýtaj sa študenta – otázky o vysokej škole | Kam na vysokú",
+  "d": "Opýtaj sa študentov fakúlt na čokoľvek – prijímačky, internát, skúškové aj voľný čas. Odpovedajú ambasádori vysokých škôl.",
+  "k": [
+   "otázky na vysokú školu",
+   "skúsenosti študentov",
+   "ambasádor fakulty"
+  ],
+  "og": "Pýtaj sa študenta",
+  "sub": "Odpovedajú študenti fakúlt"
+ },
+ "Kviz": {
+  "t": "Kvíz: Aký si študent? Zisti, aký smer ti sedí",
+  "d": "Krátky kvíz pre maturantov: odpovedz na pár otázok a zisti, aký typ študenta si a ktoré smery štúdia by ťa mohli baviť.",
+  "k": [
+   "kvíz čo študovať",
+   "test výber vysokej školy",
+   "aký odbor je pre mňa"
+  ],
+  "og": "Aký si študent?",
+  "sub": "Kvíz pre maturantov"
+ },
+ "Moj-plan": {
+  "t": "Môj plán do septembra – termíny prihlášok na vysokú",
+  "d": "Krok za krokom od výberu školy po zápis: kedy podať prihlášku na vysokú školu, termíny prijímačiek, DOD a čo nezabudnúť. Plán pre maturantov.",
+  "k": [
+   "termín podania prihlášky na vysokú školu",
+   "prihláška na vysokú školu",
+   "harmonogram maturant",
+   "prijímačky termíny"
+  ],
+  "og": "Môj plán do septembra",
+  "sub": "Termíny od prihlášky po zápis"
+ },
+ "Roadshow-pas": {
+  "t": "Roadshow pas – zbieraj pečiatky a vyhraj | Kam na vysokú",
+  "d": "Navštív stánky na výstave Kam na vysokú, zbieraj pečiatky do Roadshow pasu a súťaž o ceny. Ako to funguje a čo môžeš vyhrať.",
+  "k": [
+   "Roadshow pas",
+   "súťaž Kam na vysokú",
+   "výstava vysokých škôl súťaž"
+  ],
+  "og": "Zbieraj pečiatky. Vyhraj.",
+  "sub": "Roadshow pas Kam na vysokú"
+ },
+ "Ochrana-udajov": {
+  "t": "Ochrana osobných údajov – Kam na vysokú",
+  "d": "Ako Národné kariérne centrum spracúva osobné údaje pri registrácii na výstavu Kam na vysokú, pri odbere noviniek a formulároch na webe.",
+  "k": [],
+  "og": "Ochrana osobných údajov",
+  "sub": "Kam na vysokú · Národné kariérne centrum"
+ },
+ "Cookies": {
+  "t": "Cookies – Kam na vysokú",
+  "d": "Aké cookies používa web kamnavysoku.sk, na čo slúžia a ako zmeniť alebo odvolať súhlas s analytickými a reklamnými cookies.",
+  "k": [],
+  "og": "Cookies",
+  "sub": "Kam na vysokú"
+ },
+ "Smer-IT": {
+  "t": "Informatika a IT – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať informatiku? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium informatiky",
+   "kde študovať informatiku",
+   "informatika vysoká škola Slovensko",
+   "IT odbory"
+  ],
+  "og": "Informatika a IT",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Ekonomika": {
+  "t": "Ekonomika a manažment – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať ekonomiku a manažment? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium ekonómie",
+   "ekonomická vysoká škola",
+   "manažment štúdium",
+   "kde študovať ekonomiku"
+  ],
+  "og": "Ekonomika a manažment",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Pravo": {
+  "t": "Právo – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať právo? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium práva",
+   "právnická fakulta",
+   "prijímačky na právo",
+   "kde študovať právo"
+  ],
+  "og": "Právo",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Medicina": {
+  "t": "Medicína a zdravotníctvo – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať medicínu a zdravotníctvo? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium medicíny",
+   "lekárska fakulta prijímačky",
+   "zdravotníctvo vysoká škola",
+   "ošetrovateľstvo štúdium"
+  ],
+  "og": "Medicína a zdravotníctvo",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Technika": {
+  "t": "Technika a inžinierstvo – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať techniku a inžinierstvo? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "technická univerzita",
+   "strojárstvo štúdium",
+   "elektrotechnika vysoká škola",
+   "inžinierstvo štúdium"
+  ],
+  "og": "Technika a inžinierstvo",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Stavebnictvo": {
+  "t": "Stavebníctvo a architektúra – štúdium a uplatnenie",
+  "d": "Chceš študovať stavebníctvo a architektúru? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium architektúry",
+   "stavebná fakulta",
+   "prijímačky architektúra",
+   "stavebníctvo vysoká škola"
+  ],
+  "og": "Stavebníctvo a architektúra",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Ucitelstvo": {
+  "t": "Učiteľstvo a pedagogika – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať učiteľstvo? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium učiteľstva",
+   "pedagogická fakulta",
+   "učiteľstvo vysoká škola",
+   "ako sa stať učiteľom"
+  ],
+  "og": "Učiteľstvo a pedagogika",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Psychologia": {
+  "t": "Psychológia a sociálne vedy – štúdium a uplatnenie",
+  "d": "Chceš študovať psychológiu a sociálne vedy? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium psychológie",
+   "psychológia prijímačky",
+   "sociálna práca štúdium",
+   "kde študovať psychológiu"
+  ],
+  "og": "Psychológia a sociálne vedy",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Jazyky": {
+  "t": "Jazyky a humanitné vedy – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať jazyky a humanitné vedy? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium jazykov",
+   "prekladateľstvo štúdium",
+   "filozofická fakulta",
+   "humanitné vedy"
+  ],
+  "og": "Jazyky a humanitné vedy",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Prirodne": {
+  "t": "Prírodné vedy – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať prírodné vedy? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium biológie",
+   "prírodovedecká fakulta",
+   "štúdium chémie",
+   "prírodné vedy vysoká škola"
+  ],
+  "og": "Prírodné vedy",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Umenie": {
+  "t": "Umenie a dizajn – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať umenie a dizajn? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium dizajnu",
+   "umelecká vysoká škola",
+   "talentové prijímačky",
+   "VŠVU prijímačky"
+  ],
+  "og": "Umenie a dizajn",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Bezpecnost": {
+  "t": "Bezpečnosť, armáda a polícia – štúdium a uplatnenie",
+  "d": "Chceš študovať bezpečnosť, armádu a políciu? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "Akadémia ozbrojených síl",
+   "Akadémia Policajného zboru",
+   "štúdium bezpečnosti",
+   "vojenská vysoká škola"
+  ],
+  "og": "Bezpečnosť, armáda a polícia",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Polnohospodarstvo": {
+  "t": "Poľnohospodárstvo, les a životné prostredie – štúdium a uplatnenie",
+  "d": "Chceš študovať poľnohospodárstvo, les a životné prostredie? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "poľnohospodárska univerzita",
+   "lesníctvo štúdium",
+   "životné prostredie štúdium",
+   "veterina štúdium"
+  ],
+  "og": "Poľnohospodárstvo, les a životné prostredie",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Smer-Sport": {
+  "t": "Šport – čo študovať, prijímačky, uplatnenie",
+  "d": "Chceš študovať šport? Čo sa naučíš, aké sú prijímačky, kde študovať na Slovensku a aké je uplatnenie. Prehľad pre maturantov.",
+  "k": [
+   "štúdium športu",
+   "fakulta telesnej výchovy a športu",
+   "trénerstvo štúdium",
+   "talentové skúšky šport"
+  ],
+  "og": "Šport",
+  "sub": "Čo študovať · prijímačky · uplatnenie",
+  "crumb": "Co-studovat"
+ },
+ "Vysledky-Trencin": {
+  "t": "Výstava vysokých škôl Trenčín 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Trenčíne (16. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Trenčín",
+   "veľtrh vysokých škôl Trenčín",
+   "Kam na vysokú Trenčín"
+  ],
+  "og": "Aká bola výstava v Trenčíne",
+  "sub": "Kam na vysokú · 16. 9. 2026"
+ },
+ "Vysledky-Zilina": {
+  "t": "Výstava vysokých škôl Žilina 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Žiline (17. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Žilina",
+   "veľtrh vysokých škôl Žilina",
+   "Kam na vysokú Žilina"
+  ],
+  "og": "Aká bola výstava v Žiline",
+  "sub": "Kam na vysokú · 17. 9. 2026"
+ },
+ "Vysledky-Trnava": {
+  "t": "Výstava vysokých škôl Trnava 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Trnave (18. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Trnava",
+   "veľtrh vysokých škôl Trnava",
+   "Kam na vysokú Trnava"
+  ],
+  "og": "Aká bola výstava v Trnave",
+  "sub": "Kam na vysokú · 18. 9. 2026"
+ },
+ "Vysledky-Banska-Bystrica": {
+  "t": "Výstava vysokých škôl Banská Bystrica 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Banskej Bystrici (24. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Banská Bystrica",
+   "veľtrh vysokých škôl Banská Bystrica",
+   "Kam na vysokú Banská Bystrica"
+  ],
+  "og": "Aká bola výstava v Banskej Bystrici",
+  "sub": "Kam na vysokú · 24. 9. 2026"
+ },
+ "Vysledky-Poprad": {
+  "t": "Výstava vysokých škôl Poprad 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Poprade (29. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Poprad",
+   "veľtrh vysokých škôl Poprad",
+   "Kam na vysokú Poprad"
+  ],
+  "og": "Aká bola výstava v Poprade",
+  "sub": "Kam na vysokú · 29. 9. 2026"
+ },
+ "Vysledky-Presov": {
+  "t": "Výstava vysokých škôl Prešov 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Prešove (30. 9. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Prešov",
+   "veľtrh vysokých škôl Prešov",
+   "Kam na vysokú Prešov"
+  ],
+  "og": "Aká bola výstava v Prešove",
+  "sub": "Kam na vysokú · 30. 9. 2026"
+ },
+ "Vysledky-Kosice": {
+  "t": "Výstava vysokých škôl Košice 2026 – aká bola | Kam na vysokú",
+  "d": "Výstava vysokých škôl Kam na vysokú v Košiciach (1. 10. 2026): kto vystavoval, koľko študentov prišlo, fotky a na čo sa študenti pýtali.",
+  "k": [
+   "výstava vysokých škôl Košice",
+   "veľtrh vysokých škôl Košice",
+   "Kam na vysokú Košice"
+  ],
+  "og": "Aká bola výstava v Košiciach",
+  "sub": "Kam na vysokú · 1. 10. 2026"
+ }
+}

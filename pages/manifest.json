@@ -1,0 +1,237 @@
+{
+ "Main": {
+  "title": "Hlavná stránka (nový web)",
+  "slug": "domov",
+  "parent": null
+ },
+ "Zastavka-Prievidza": {
+  "title": "Prievidza – Roadshow 2026/27",
+  "slug": "vystava-vysokych-skol-prievidza",
+  "parent": null
+ },
+ "Zastavka-Bratislava": {
+  "title": "Bratislava – Roadshow 2026/27",
+  "slug": "vystava-vysokych-skol-bratislava",
+  "parent": null
+ },
+ "Vysledky-Trencin": {
+  "title": "Trenčín – aká bola výstava",
+  "slug": "vystava-vysokych-skol-trencin",
+  "parent": null
+ },
+ "Vysledky-Zilina": {
+  "title": "Žilina – aká bola výstava",
+  "slug": "vystava-vysokych-skol-zilina",
+  "parent": null
+ },
+ "Vysledky-Trnava": {
+  "title": "Trnava – aká bola výstava",
+  "slug": "vystava-vysokych-skol-trnava",
+  "parent": null
+ },
+ "Vysledky-Banska-Bystrica": {
+  "title": "Banská Bystrica – aká bola výstava",
+  "slug": "vystava-vysokych-skol-banska-bystrica",
+  "parent": null
+ },
+ "Vysledky-Poprad": {
+  "title": "Poprad – aká bola výstava",
+  "slug": "vystava-vysokych-skol-poprad",
+  "parent": null
+ },
+ "Vysledky-Presov": {
+  "title": "Prešov – aká bola výstava",
+  "slug": "vystava-vysokych-skol-presov",
+  "parent": null
+ },
+ "Vysledky-Kosice": {
+  "title": "Košice – aká bola výstava",
+  "slug": "vystava-vysokych-skol-kosice",
+  "parent": null
+ },
+ "Chcem-vystavovat": {
+  "title": "Chcem byť vystavovateľ",
+  "slug": "chcem-vystavovat",
+  "parent": null
+ },
+ "Vystavovatelia": {
+  "title": "Všetci vystavovatelia",
+  "slug": "vystavovatelia",
+  "parent": null
+ },
+ "Co-studovat": {
+  "title": "Čo študovať",
+  "slug": "co-studovat",
+  "parent": null
+ },
+ "Smer-IT": {
+  "title": "Informatika a IT",
+  "slug": "informatika-a-it",
+  "parent": "Co-studovat"
+ },
+ "Smer-Ekonomika": {
+  "title": "Ekonomika a manažment",
+  "slug": "ekonomika-a-manazment",
+  "parent": "Co-studovat"
+ },
+ "Smer-Pravo": {
+  "title": "Právo",
+  "slug": "pravo",
+  "parent": "Co-studovat"
+ },
+ "Smer-Medicina": {
+  "title": "Medicína a zdravotníctvo",
+  "slug": "medicina-a-zdravotnictvo",
+  "parent": "Co-studovat"
+ },
+ "Smer-Technika": {
+  "title": "Technika a inžinierstvo",
+  "slug": "technika-a-inzinierstvo",
+  "parent": "Co-studovat"
+ },
+ "Smer-Stavebnictvo": {
+  "title": "Stavebníctvo a architektúra",
+  "slug": "stavebnictvo-a-architektura",
+  "parent": "Co-studovat"
+ },
+ "Smer-Ucitelstvo": {
+  "title": "Učiteľstvo a pedagogika",
+  "slug": "ucitelstvo-a-pedagogika",
+  "parent": "Co-studovat"
+ },
+ "Smer-Psychologia": {
+  "title": "Psychológia a sociálne vedy",
+  "slug": "psychologia-a-socialne-vedy",
+  "parent": "Co-studovat"
+ },
+ "Smer-Jazyky": {
+  "title": "Jazyky a humanitné vedy",
+  "slug": "jazyky-a-humanitne-vedy",
+  "parent": "Co-studovat"
+ },
+ "Smer-Prirodne": {
+  "title": "Prírodné vedy",
+  "slug": "prirodne-vedy",
+  "parent": "Co-studovat"
+ },
+ "Smer-Umenie": {
+  "title": "Umenie a dizajn",
+  "slug": "umenie-a-dizajn",
+  "parent": "Co-studovat"
+ },
+ "Smer-Bezpecnost": {
+  "title": "Bezpečnosť, armáda a polícia",
+  "slug": "bezpecnost-armada-a-policia",
+  "parent": "Co-studovat"
+ },
+ "Smer-Polnohospodarstvo": {
+  "title": "Poľnohospodárstvo, les a životné prostredie",
+  "slug": "polnohospodarstvo-les-a-zivotne-prostredie",
+  "parent": "Co-studovat"
+ },
+ "Smer-Sport": {
+  "title": "Šport",
+  "slug": "sport",
+  "parent": "Co-studovat"
+ },
+ "DOD": {
+  "title": "Dni otvorených dverí",
+  "slug": "dni-otvorenych-dveri",
+  "parent": null
+ },
+ "Casopis": {
+  "title": "Časopis Kam po strednej",
+  "slug": "casopis-kam-po-strednej",
+  "parent": null
+ },
+ "Rady": {
+  "title": "Rady a články",
+  "slug": "clanky",
+  "parent": null
+ },
+ "Clanok": {
+  "title": "Šablóna článku (ukážka)",
+  "slug": "sablona-clanku",
+  "parent": null
+ },
+ "Poradcovia": {
+  "title": "Pre výchovných poradcov",
+  "slug": "pre-skoly",
+  "parent": null
+ },
+ "Rodicia": {
+  "title": "Pre rodičov",
+  "slug": "pre-rodicov",
+  "parent": null
+ },
+ "Kontakt": {
+  "title": "Kontakt",
+  "slug": "kontakt",
+  "parent": null
+ },
+ "Zahranicie": {
+  "title": "Štúdium v zahraničí",
+  "slug": "studium-v-zahranici",
+  "parent": null
+ },
+ "Alternativy": {
+  "title": "Nechcem hneď na vysokú",
+  "slug": "nechcem-hned-na-vysoku",
+  "parent": null
+ },
+ "Mesta": {
+  "title": "Študentské mestá",
+  "slug": "studentske-mesta",
+  "parent": null
+ },
+ "Kalkulacka": {
+  "title": "Kalkulačka nákladov",
+  "slug": "kalkulacka-nakladov",
+  "parent": null
+ },
+ "Stipendia": {
+  "title": "Štipendiá",
+  "slug": "stipendia",
+  "parent": null
+ },
+ "Slovnik": {
+  "title": "Slovník vysokoškoláka",
+  "slug": "slovnik-vysokoskolaka",
+  "parent": null
+ },
+ "Pytaj-sa": {
+  "title": "Pýtaj sa študenta",
+  "slug": "pytaj-sa-studenta",
+  "parent": null
+ },
+ "Kviz": {
+  "title": "Kvíz – Aký si študent?",
+  "slug": "kviz",
+  "parent": null
+ },
+ "Moj-plan": {
+  "title": "Môj plán do septembra",
+  "slug": "moj-plan",
+  "parent": null
+ },
+ "Roadshow-pas": {
+  "title": "Roadshow pas",
+  "slug": "roadshow-pas",
+  "parent": null
+ },
+ "Ochrana-udajov": {
+  "title": "Ochrana osobných údajov",
+  "slug": "ochrana-osobnych-udajov",
+  "parent": null
+ },
+ "Cookies": {
+  "title": "Cookies",
+  "slug": "cookies",
+  "parent": null
+ },
+ "Smer-Teologia": {
+  "title": "Teológia a náboženstvo",
+  "slug": "teologia-a-nabozenstvo",
+  "parent": "Co-studovat"
+ }
+}
