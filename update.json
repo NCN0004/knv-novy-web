@@ -1,5 +1,5 @@
 {
- "version": "0.9.21",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/60a35c9363f7b9c89d62297f0ab2edd5edff1013.zip",
- "notes": "Vystavovatelia 2026: Prievidza (stránka zastávky) a Prievidza + Bratislava (žlté karty v smeroch)."
+ "version": "0.9.22",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/267b29706052bf4c4adf5b253916955c13c83b1e.zip",
+ "notes": "Odstránené slovo burza z webu (stránky zastávok Prievidza a Bratislava, SEO popisy)."
 }
