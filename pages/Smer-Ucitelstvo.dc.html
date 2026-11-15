@@ -116,7 +116,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="stackm" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 24px">
 <div>
 <h2 class="h2m" style="font-size: 44px; letter-spacing: -0.03em; margin: 0 0 8px; font-weight: 800">Kde to môžeš <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">študovať</span></h2>
-<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #1F6A1E">Zelené sú vystavovatelia Roadshow</strong>.</p>
+<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #9A7400">Žlté uvidíš na najbližšej výstave</strong>, <strong style="color: #1F6A1E">zelené sú vystavovatelia Roadshow</strong>.</p>
 </div>
 <span style="font-family: Caveat, cursive; font-size: 26px; font-weight: 700; color: #575152; white-space: nowrap">{{shownLabel}}</span>
 </div>
@@ -284,9 +284,25 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://www.fedu.uniba.sk/",
       "logo": "{{KNV_ASSETS}}/logos/701050000_67113.webp",
+      "ex": true
+      },
+      {
+      "mono": "PdF",
+      "name": "Pedagogická fakulta",
+      "uni": "Trnavská univerzita v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://pdf.truni.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/pedagogicka-fakulta-rastrove-bez-tienov_491995.webp",
       "ex": true
       },
       {
@@ -309,17 +325,6 @@ class Component extends DCLogic {
       "stops": [],
       "url": "https://www.pf.ukf.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/UKF_PF.png",
-      "ex": true
-      },
-      {
-      "mono": "PdF",
-      "name": "Pedagogická fakulta",
-      "uni": "Trnavská univerzita v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://pdf.truni.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/pedagogicka-fakulta-rastrove-bez-tienov_491995.webp",
       "ex": true
       },
       {
@@ -350,7 +355,10 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fphil.uniba.sk/",
       "logo": "{{KNV_ASSETS}}/logos/701030000_87760.webp",
       "ex": true
@@ -361,7 +369,10 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fns.uniba.sk/",
       "logo": "{{KNV_ASSETS}}/logos/701040000_217118.webp",
       "ex": true
@@ -372,7 +383,10 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fsport.uniba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2022/12/FTVS_logo_text_BP_horizontal.png",
       "ex": true
@@ -383,9 +397,25 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fmph.uniba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2022/12/FMFI_logo_text_BP_horizontal.png",
+      "ex": true
+      },
+      {
+      "mono": "FF",
+      "name": "Filozofická fakulta",
+      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://ff.ucm.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/720030000_3501.webp",
       "ex": true
       },
       {
@@ -466,17 +496,6 @@ class Component extends DCLogic {
       "ex": true
       },
       {
-      "mono": "FF",
-      "name": "Filozofická fakulta",
-      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://ff.ucm.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/720030000_3501.webp",
-      "ex": true
-      },
-      {
       "mono": "FHPV",
       "name": "Fakulta humanitných a prírodných vied",
       "uni": "Prešovská univerzita v Prešove",
@@ -537,7 +556,9 @@ class Component extends DCLogic {
       "uni": "Univerzita Palackého v Olomouci",
       "city": "Olomouc",
       "country": "Česko",
-      "stops": [],
+      "stops": [
+      "Bratislava"
+      ],
       "url": "https://www.pdf.upol.cz/",
       "logo": "{{KNV_ASSETS}}/logos/cz-upol.webp",
       "ex": true

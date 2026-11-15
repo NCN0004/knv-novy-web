@@ -116,7 +116,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="stackm" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 24px">
 <div>
 <h2 class="h2m" style="font-size: 44px; letter-spacing: -0.03em; margin: 0 0 8px; font-weight: 800">Kde to môžeš <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">študovať</span></h2>
-<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #1F6A1E">Zelené sú vystavovatelia Roadshow</strong>.</p>
+<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #9A7400">Žlté uvidíš na najbližšej výstave</strong>, <strong style="color: #1F6A1E">zelené sú vystavovatelia Roadshow</strong>.</p>
 </div>
 <span style="font-family: Caveat, cursive; font-size: 26px; font-weight: 700; color: #575152; white-space: nowrap">{{shownLabel}}</span>
 </div>
@@ -284,7 +284,10 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://www.fm.uniba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2022/12/FM_logo_text_BP_horizontal.png",
       "ex": true
@@ -295,7 +298,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://nhf.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_NHF.png",
       "ex": true
@@ -306,7 +312,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://of.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_OF.png",
       "ex": true
@@ -317,7 +326,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fpm.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_FPM.png",
       "ex": true
@@ -328,7 +340,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fmv.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_FMV.png",
       "ex": true
@@ -339,7 +354,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Košice",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://phf.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_PHF_KE.png",
       "ex": true
@@ -350,9 +368,64 @@ class Component extends DCLogic {
       "uni": "Žilinská univerzita v Žiline",
       "city": "Žilina",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Bratislava"
+      ],
       "url": "https://fpedas.uniza.sk/",
       "logo": "{{KNV_ASSETS}}/logos/710050000_12931.webp",
+      "ex": true
+      },
+      {
+      "mono": "FEM",
+      "name": "Fakulta ekonomiky a manažmentu",
+      "uni": "Slovenská poľnohospodárska univerzita v Nitre",
+      "city": "Nitra",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://fem.uniag.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/logofem_147764.webp",
+      "ex": true
+      },
+      {
+      "mono": "FEŠRR",
+      "name": "Fakulta európskych štúdií a regionálneho rozvoja",
+      "uni": "Slovenská poľnohospodárska univerzita v Nitre",
+      "city": "Nitra",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://fesrr.uniag.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/logofesrr_170286.webp",
+      "ex": true
+      },
+      {
+      "mono": "FSEV",
+      "name": "Fakulta sociálno-ekonomických vzťahov",
+      "uni": "Trenčianska univerzita Alexandra Dubčeka v Trenčíne",
+      "city": "Trenčín",
+      "country": "Slovensko",
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
+      "url": "https://fsev.tnuni.sk/",
+      "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/11/fsev-Trencianska-univerzita-TNUNI.png",
+      "ex": true
+      },
+      {
+      "mono": "FEP",
+      "name": "Fakulta ekonómie a podnikania",
+      "uni": "Paneurópska vysoká škola",
+      "city": "Bratislava",
+      "country": "Slovensko",
+      "stops": [
+      "Prievidza"
+      ],
+      "url": "https://www.paneurouni.com/fakulta-ekonomie-a-podnikania/",
+      "logo": "{{KNV_ASSETS}}/logos/727020000_24466.webp",
       "ex": true
       },
       {
@@ -378,39 +451,6 @@ class Component extends DCLogic {
       "ex": true
       },
       {
-      "mono": "FEM",
-      "name": "Fakulta ekonomiky a manažmentu",
-      "uni": "Slovenská poľnohospodárska univerzita v Nitre",
-      "city": "Nitra",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://fem.uniag.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/logofem_147764.webp",
-      "ex": true
-      },
-      {
-      "mono": "FEŠRR",
-      "name": "Fakulta európskych štúdií a regionálneho rozvoja",
-      "uni": "Slovenská poľnohospodárska univerzita v Nitre",
-      "city": "Nitra",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://fesrr.uniag.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/logofesrr_170286.webp",
-      "ex": true
-      },
-      {
-      "mono": "FSEV",
-      "name": "Fakulta sociálno-ekonomických vzťahov",
-      "uni": "Trenčianska univerzita Alexandra Dubčeka v Trenčíne",
-      "city": "Trenčín",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://fsev.tnuni.sk/",
-      "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/11/fsev-Trencianska-univerzita-TNUNI.png",
-      "ex": true
-      },
-      {
       "mono": "FMEO",
       "name": "Fakulta manažmentu, ekonomiky a obchodu",
       "uni": "Prešovská univerzita v Prešove",
@@ -422,23 +462,15 @@ class Component extends DCLogic {
       "ex": true
       },
       {
-      "mono": "FEP",
-      "name": "Fakulta ekonómie a podnikania",
-      "uni": "Paneurópska vysoká škola",
-      "city": "Bratislava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://www.paneurouni.com/fakulta-ekonomie-a-podnikania/",
-      "logo": "{{KNV_ASSETS}}/logos/727020000_24466.webp",
-      "ex": true
-      },
-      {
       "mono": "FSEV",
       "name": "Fakulta sociálnych a ekonomických vied",
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fses.uniba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2022/12/FSEV_logo_text_BP_horizontal.png",
       "ex": true
@@ -449,7 +481,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://fhi.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_FHI.png",
       "ex": true
@@ -460,7 +495,10 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://faj.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_FAJ.png",
       "ex": true
@@ -471,9 +509,24 @@ class Component extends DCLogic {
       "uni": "Žilinská univerzita v Žiline",
       "city": "Žilina",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Bratislava"
+      ],
       "url": "https://www.fri.uniza.sk/",
       "logo": "{{KNV_ASSETS}}/logos/710060000_514511.webp",
+      "ex": true
+      },
+      {
+      "mono": "FMK",
+      "name": "Fakulta masmediálnej komunikácie",
+      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://fmk.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/720010000_30478.webp",
       "ex": true
       },
       {
@@ -485,17 +538,6 @@ class Component extends DCLogic {
       "stops": [],
       "url": "https://df.tuzvo.sk/",
       "logo": "{{KNV_ASSETS}}/logos/705020000_94080.webp",
-      "ex": true
-      },
-      {
-      "mono": "FMK",
-      "name": "Fakulta masmediálnej komunikácie",
-      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://fmk.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/720010000_30478.webp",
       "ex": true
       },
       {
@@ -526,7 +568,9 @@ class Component extends DCLogic {
       "uni": "Univerzita Tomáše Bati ve Zlíně",
       "city": "Zlín",
       "country": "Česko",
-      "stops": [],
+      "stops": [
+      "Prievidza"
+      ],
       "url": "https://fame.utb.cz/",
       "logo": "{{KNV_ASSETS}}/logos/cz-utb-fame.webp",
       "ex": true
@@ -543,6 +587,19 @@ class Component extends DCLogic {
       "ex": true
       },
       {
+      "mono": "VŠEM",
+      "name": "Vysoká škola ekonómie a manažmentu",
+      "uni": "VŠEM v Bratislave",
+      "city": "Bratislava",
+      "country": "Slovensko",
+      "stops": [
+      "Prievidza"
+      ],
+      "url": "https://www.vsemba.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/726000000_141068.webp",
+      "ex": false
+      },
+      {
       "mono": "EIK",
       "name": "Fakulta ekonómie a informatiky",
       "uni": "Univerzita J. Selyeho",
@@ -551,17 +608,6 @@ class Component extends DCLogic {
       "stops": [],
       "url": "https://fei.ujs.sk/",
       "logo": "{{KNV_ASSETS}}/logos/725010000_113275.webp",
-      "ex": false
-      },
-      {
-      "mono": "VŠEM",
-      "name": "Vysoká škola ekonómie a manažmentu",
-      "uni": "VŠEM v Bratislave",
-      "city": "Bratislava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://www.vsemba.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/726000000_141068.webp",
       "ex": false
       },
       {

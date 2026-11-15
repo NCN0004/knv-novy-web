@@ -116,7 +116,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="stackm" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 24px">
 <div>
 <h2 class="h2m" style="font-size: 44px; letter-spacing: -0.03em; margin: 0 0 8px; font-weight: 800">Kde to môžeš <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">študovať</span></h2>
-<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #1F6A1E">Zelené sú vystavovatelia Roadshow</strong>.</p>
+<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #9A7400">Žlté uvidíš na najbližšej výstave</strong>, <strong style="color: #1F6A1E">zelené sú vystavovatelia Roadshow</strong>.</p>
 </div>
 <span style="font-family: Caveat, cursive; font-size: 26px; font-weight: 700; color: #575152; white-space: nowrap">{{shownLabel}}</span>
 </div>
@@ -284,9 +284,38 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Prievidza",
+      "Bratislava"
+      ],
       "url": "https://www.flaw.uniba.sk/",
       "logo": "{{KNV_ASSETS}}/logos/701020000_57190.webp",
+      "ex": true
+      },
+      {
+      "mono": "PF",
+      "name": "Právnická fakulta",
+      "uni": "Trnavská univerzita v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [
+      "Bratislava"
+      ],
+      "url": "https://iuridica.truni.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/713050000_18206.webp",
+      "ex": true
+      },
+      {
+      "mono": "FP",
+      "name": "Fakulta práva",
+      "uni": "Paneurópska vysoká škola",
+      "city": "Bratislava",
+      "country": "Slovensko",
+      "stops": [
+      "Prievidza"
+      ],
+      "url": "https://www.paneurouni.com/fakulta-prava/",
+      "logo": "{{KNV_ASSETS}}/logos/727010000_51909.webp",
       "ex": true
       },
       {
@@ -323,34 +352,14 @@ class Component extends DCLogic {
       "ex": true
       },
       {
-      "mono": "PF",
-      "name": "Právnická fakulta",
-      "uni": "Trnavská univerzita v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://iuridica.truni.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/713050000_18206.webp",
-      "ex": true
-      },
-      {
-      "mono": "FP",
-      "name": "Fakulta práva",
-      "uni": "Paneurópska vysoká škola",
-      "city": "Bratislava",
-      "country": "Slovensko",
-      "stops": [],
-      "url": "https://www.paneurouni.com/fakulta-prava/",
-      "logo": "{{KNV_ASSETS}}/logos/727010000_51909.webp",
-      "ex": true
-      },
-      {
       "mono": "FSV",
       "name": "Fakulta sociálnych vied",
       "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
       "city": "Trnava",
       "country": "Slovensko",
-      "stops": [],
+      "stops": [
+      "Bratislava"
+      ],
       "url": "https://fsv.ucm.sk/sk/",
       "logo": "{{KNV_ASSETS}}/logos/720040000_4744.webp",
       "ex": true
@@ -372,7 +381,9 @@ class Component extends DCLogic {
       "uni": "Univerzita Palackého v Olomouci",
       "city": "Olomouc",
       "country": "Česko",
-      "stops": [],
+      "stops": [
+      "Bratislava"
+      ],
       "url": "https://www.pf.upol.cz/",
       "logo": "{{KNV_ASSETS}}/logos/cz-upol-pf.webp",
       "ex": true
