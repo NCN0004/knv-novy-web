@@ -66,6 +66,9 @@ add_filter( 'auto_update_plugin', function ( $update, $item ) {
 // Ďalšia kontrola aktualizácie každú hodinu (nie len 2× denne).
 add_action( 'knv_upd_hourly', function () {
 	delete_site_transient( 'knv_upd_info' );
+	// WordPress inak kontroluje len raz za 12 hodín – vynútime čerstvú kontrolu.
+	$t = get_site_transient( 'update_plugins' );
+	if ( is_object( $t ) ) { $t->last_checked = 0; set_site_transient( 'update_plugins', $t ); }
 	if ( ! function_exists( 'wp_update_plugins' ) ) { require_once ABSPATH . 'wp-includes/update.php'; }
 	wp_update_plugins();
 	if ( ! function_exists( 'wp_maybe_auto_update' ) ) { require_once ABSPATH . 'wp-includes/update.php'; }
