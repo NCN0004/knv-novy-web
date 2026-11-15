@@ -1,5 +1,5 @@
 {
- "version": "0.9.20",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/0f6876d18fc6c5e191689e1d972514e19dfdc316.zip",
- "notes": "Úpravy podľa Mira: Registrácia na výstavu namiesto vstupenky, bez boxu s číslami, Prievidza bez programu a minuloročných vystavovateľov."
+ "version": "0.9.21",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/60a35c9363f7b9c89d62297f0ab2edd5edff1013.zip",
+ "notes": "Vystavovatelia 2026: Prievidza (stránka zastávky) a Prievidza + Bratislava (žlté karty v smeroch)."
 }
