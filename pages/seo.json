@@ -6,7 +6,6 @@
    "roadshow 2026",
    "kam na vysokú",
    "výstava vysokých škôl",
-   "burza vysokých škôl 2026",
    "veľtrh vysokých škôl",
    "vysoké školy na Slovensku"
   ],
@@ -15,13 +14,12 @@
  },
  "Zastavka-Prievidza": {
   "t": "Výstava vysokých škôl Prievidza 1. 12. 2026 | Kam na vysokú",
-  "d": "Výstava a burza vysokých škôl v Prievidzi 1. decembra 2026, Hotel Magura, 9:00 – 12:30. Univerzity na jednom mieste, prednášky a poradenstvo. Vstup zadarmo.",
+  "d": "Výstava vysokých škôl v Prievidzi 1. decembra 2026, Hotel Magura, 9:00 – 12:30. Univerzity na jednom mieste, prednášky a poradenstvo. Vstup zadarmo.",
   "k": [
    "výstava vysokých škôl Prievidza",
    "veľtrh vysokých škôl Prievidza",
    "Kam na vysokú Prievidza",
-   "vysoké školy Prievidza 2026",
-   "burza vysokých škôl 2026"
+   "vysoké školy Prievidza 2026"
   ],
   "og": "Výstava vysokých škôl Prievidza",
   "sub": "1. decembra 2026 · Hotel Magura · vstup zadarmo",
@@ -47,13 +45,12 @@
  },
  "Zastavka-Bratislava": {
   "t": "Výstava vysokých škôl Bratislava 26. 1. 2027 | Kam na vysokú",
-  "d": "Výstava a burza vysokých škôl v Bratislave 26. januára 2027, Dom športu, 9:00 – 12:30. Slovenské a české univerzity, prednášky, poradenstvo. Vstup zadarmo.",
+  "d": "Výstava vysokých škôl v Bratislave 26. januára 2027, Dom športu, 9:00 – 12:30. Slovenské a české univerzity, prednášky, poradenstvo. Vstup zadarmo.",
   "k": [
    "výstava vysokých škôl Bratislava",
    "veľtrh vysokých škôl Bratislava 2027",
    "Kam na vysokú Bratislava",
-   "vysoké školy Bratislava",
-   "burza vysokých škôl 2027"
+   "vysoké školy Bratislava"
   ],
   "og": "Výstava vysokých škôl Bratislava",
   "sub": "26. januára 2027 · Dom športu · vstup zadarmo",
