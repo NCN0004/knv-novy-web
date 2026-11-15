@@ -50,7 +50,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <a href="Rady.dc.html" style="color: #393536; text-decoration: none">Rady</a>
 <a href="Poradcovia.dc.html" style="color: #393536; text-decoration: none">Pre školy</a>
 </nav>
-<a class="hide-m" href="Zastavka-Prievidza.dc.html" style="background: #2B7F29; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 999px; white-space: nowrap">Bezplatná vstupenka</a>
+<a class="hide-m" href="Zastavka-Prievidza.dc.html" style="background: #2B7F29; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 999px; white-space: nowrap">Registrácia na výstavu</a>
 </div>
 </header>
 
@@ -101,10 +101,10 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="wrap padm stackm" style="padding-top: 22px; padding-bottom: 22px; display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap">
 <div style="display: flex; gap: 16px; align-items: center; min-width: 0; flex: 1 1 420px">
 <span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 14px; background: #F2B705; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#393536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></span>
-<div style="min-width: 0"><div style="font-weight: 800; font-size: 19px; color: #393536; line-height: 1.3">Stretni tieto fakulty osobne – výstava Kam na vysokú, {{nearCity}}, {{nearDate}}</div>
+<div style="min-width: 0"><div style="font-weight: 800; font-size: 19px; color: #393536; line-height: 1.3">Stretni fakulty osobne – výstava Kam na vysokú, {{nearCity}}, {{nearDate}}</div>
 <div style="font-size: 15px; color: #4A4546; margin-top: 4px">Za jedno dopoludnie sa porozprávaš so študentmi aj vyučujúcimi viacerých fakúlt naraz. Vstup je zadarmo.</div></div>
 </div>
-<a href="{{nearUrl}}" data-knv="smer-pruh" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; background: #2B7F29; color: #FFFFFF; font-weight: 800; font-size: 16px; padding: 13px 22px; border-radius: 999px; text-decoration: none; white-space: nowrap">Chcem bezplatnú vstupenku →</a>
+<a href="{{nearUrl}}" data-knv="smer-pruh" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; background: #2B7F29; color: #FFFFFF; font-weight: 800; font-size: 16px; padding: 13px 22px; border-radius: 999px; text-decoration: none; white-space: nowrap">Registrácia na výstavu →</a>
 </div>
 </section>
 
@@ -116,7 +116,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="stackm" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 24px">
 <div>
 <h2 class="h2m" style="font-size: 44px; letter-spacing: -0.03em; margin: 0 0 8px; font-weight: 800">Kde to môžeš <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">študovať</span></h2>
-<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #9A7400">Žlté uvidíš na najbližšej výstave</strong>, <strong style="color: #1F6A1E">zelené sú vystavovatelia Roadshow</strong>.</p>
+<p style="font-size: 17px; color: #4A4546; margin: 0">Fakulty so študijnými programami v tomto smere. <strong style="color: #1F6A1E">Zelené sú vystavovatelia Roadshow</strong>.</p>
 </div>
 <span style="font-family: Caveat, cursive; font-size: 26px; font-weight: 700; color: #575152; white-space: nowrap">{{shownLabel}}</span>
 </div>
@@ -216,7 +216,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <h2 class="h2m" style="font-size: 34px; letter-spacing: -0.03em; margin: 4px 0 8px; font-weight: 800">Fakulty tohto smeru na najbližšej zastávke Roadshow</h2>
 <p style="font-size: 17px; color: #4A4546; margin: 0">Prievidza · utorok 1. decembra 2026 · vstup zadarmo</p>
 </div>
-<a href="Zastavka-Prievidza.dc.html" style="flex: none; background: #2B7F29; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 16px 26px; border-radius: 16px">Bezplatná vstupenka</a>
+<a href="Zastavka-Prievidza.dc.html" style="flex: none; background: #2B7F29; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 16px 26px; border-radius: 16px">Registrácia na výstavu</a>
 </div>
 </div>
 </section>
@@ -284,10 +284,7 @@ class Component extends DCLogic {
       "uni": "Univerzita Komenského v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [
-      "Prievidza",
-      "Bratislava"
-      ],
+      "stops": [],
       "url": "https://fphil.uniba.sk/",
       "logo": "{{KNV_ASSETS}}/logos/701030000_87760.webp",
       "ex": true
@@ -298,64 +295,9 @@ class Component extends DCLogic {
       "uni": "Ekonomická univerzita v Bratislave",
       "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [
-      "Prievidza",
-      "Bratislava"
-      ],
+      "stops": [],
       "url": "https://faj.euba.sk/",
       "logo": "https://kamnavysoku.sk/wp-content/uploads/2024/08/EUBA_FAJ.png",
-      "ex": true
-      },
-      {
-      "mono": "FF",
-      "name": "Filozofická fakulta",
-      "uni": "Trnavská univerzita v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [
-      "Bratislava"
-      ],
-      "url": "https://ff.truni.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/713010000_31251.webp",
-      "ex": true
-      },
-      {
-      "mono": "FMK",
-      "name": "Fakulta masmediálnej komunikácie",
-      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [
-      "Bratislava"
-      ],
-      "url": "https://fmk.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/720010000_30478.webp",
-      "ex": true
-      },
-      {
-      "mono": "FF",
-      "name": "Filozofická fakulta",
-      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
-      "city": "Trnava",
-      "country": "Slovensko",
-      "stops": [
-      "Bratislava"
-      ],
-      "url": "https://ff.ucm.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/720030000_3501.webp",
-      "ex": true
-      },
-      {
-      "mono": "FM",
-      "name": "Fakulta masmédií",
-      "uni": "Paneurópska vysoká škola",
-      "city": "Bratislava",
-      "country": "Slovensko",
-      "stops": [
-      "Bratislava"
-      ],
-      "url": "https://www.paneurouni.com/fakulta-masmedii/",
-      "logo": "{{KNV_ASSETS}}/logos/727030000_53783.webp",
       "ex": true
       },
       {
@@ -394,6 +336,39 @@ class Component extends DCLogic {
       {
       "mono": "FF",
       "name": "Filozofická fakulta",
+      "uni": "Trnavská univerzita v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [],
+      "url": "https://ff.truni.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/713010000_31251.webp",
+      "ex": true
+      },
+      {
+      "mono": "FMK",
+      "name": "Fakulta masmediálnej komunikácie",
+      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [],
+      "url": "https://fmk.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/720010000_30478.webp",
+      "ex": true
+      },
+      {
+      "mono": "FF",
+      "name": "Filozofická fakulta",
+      "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [],
+      "url": "https://ff.ucm.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/720030000_3501.webp",
+      "ex": true
+      },
+      {
+      "mono": "FF",
+      "name": "Filozofická fakulta",
       "uni": "Prešovská univerzita v Prešove",
       "city": "Prešov",
       "country": "Slovensko",
@@ -414,16 +389,14 @@ class Component extends DCLogic {
       "ex": true
       },
       {
-      "mono": "PdF",
-      "name": "Pedagogická fakulta",
-      "uni": "Trnavská univerzita v Trnave",
-      "city": "Trnava",
+      "mono": "FM",
+      "name": "Fakulta masmédií",
+      "uni": "Paneurópska vysoká škola",
+      "city": "Bratislava",
       "country": "Slovensko",
-      "stops": [
-      "Bratislava"
-      ],
-      "url": "https://pdf.truni.sk/",
-      "logo": "{{KNV_ASSETS}}/logos/pedagogicka-fakulta-rastrove-bez-tienov_491995.webp",
+      "stops": [],
+      "url": "https://www.paneurouni.com/fakulta-masmedii/",
+      "logo": "{{KNV_ASSETS}}/logos/727030000_53783.webp",
       "ex": true
       },
       {
@@ -435,6 +408,17 @@ class Component extends DCLogic {
       "stops": [],
       "url": "https://www.upjs.sk/filozoficka-fakulta/",
       "logo": "{{KNV_ASSETS}}/logos/logo-ff-upjs-f_112563.webp",
+      "ex": true
+      },
+      {
+      "mono": "PdF",
+      "name": "Pedagogická fakulta",
+      "uni": "Trnavská univerzita v Trnave",
+      "city": "Trnava",
+      "country": "Slovensko",
+      "stops": [],
+      "url": "https://pdf.truni.sk/",
+      "logo": "{{KNV_ASSETS}}/logos/pedagogicka-fakulta-rastrove-bez-tienov_491995.webp",
       "ex": true
       },
       {
@@ -454,9 +438,7 @@ class Component extends DCLogic {
       "uni": "Masarykova univerzita",
       "city": "Brno",
       "country": "Česko",
-      "stops": [
-      "Bratislava"
-      ],
+      "stops": [],
       "url": "https://www.phil.muni.cz/",
       "logo": "{{KNV_ASSETS}}/logos/cz-muni-ff.webp",
       "ex": true
@@ -467,9 +449,7 @@ class Component extends DCLogic {
       "uni": "Univerzita Palackého v Olomouci",
       "city": "Olomouc",
       "country": "Česko",
-      "stops": [
-      "Bratislava"
-      ],
+      "stops": [],
       "url": "https://www.ff.upol.cz/",
       "logo": "{{KNV_ASSETS}}/logos/cz-upol-ff.webp",
       "ex": true

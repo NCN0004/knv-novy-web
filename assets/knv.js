@@ -12,7 +12,7 @@
     var p=document.createElement('div');p.className='knv-panel';p.setAttribute('role','dialog');p.setAttribute('aria-label','Menu');
     var html='<div class="knv-panel-top"><strong>Kam na vysokú</strong><button type="button" class="knv-burger" style="display:flex" aria-label="Zavrieť menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>';
     nav.querySelectorAll('a').forEach(function(a){html+='<a class="knv-l" href="'+a.getAttribute('href')+'"'+(a.getAttribute('aria-current')?' aria-current="page"':'')+'>'+a.textContent+'</a>';});
-    html+='<div class="knv-ctas"><a class="knv-cta" style="background:#2B7F29;color:#fff" href="'+(C.zastavka||'#')+'">Chcem bezplatnú vstupenku na Roadshow</a><a class="knv-cta" style="border:2px solid #D42A33;color:#C8232C" href="'+(C.vystavovat||'#')+'">Chcem byť vystavovateľ</a></div>';
+    html+='<div class="knv-ctas"><a class="knv-cta" style="background:#2B7F29;color:#fff" href="'+(C.zastavka||'#')+'">Registrácia na výstavu Roadshow</a><a class="knv-cta" style="border:2px solid #D42A33;color:#C8232C" href="'+(C.vystavovat||'#')+'">Chcem byť vystavovateľ</a></div>';
     p.innerHTML=html;document.body.appendChild(p);
     btn.addEventListener('click',function(){p.classList.add('open');document.documentElement.style.overflow='hidden';});
     p.querySelector('button').addEventListener('click',function(){p.classList.remove('open');document.documentElement.style.overflow='';});
@@ -40,7 +40,7 @@
     if(f.querySelector('#r-email')){
       var em=val(f,'r-email'),nm=val(f,'r-meno');
       if(!nm)return stop(f.querySelector('#r-meno'),'Vyplň prosím meno a priezvisko.');
-      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))return stop(f.querySelector('#r-email'),'Skontroluj prosím e-mail – príde naň vstupenka.');
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))return stop(f.querySelector('#r-email'),'Skontroluj prosím e-mail – príde naň potvrdenie registrácie.');
       var r=val(f,'r-rocnik'),n=split(nm);
       seSubmit(C.stopCode==='29'?SE_STU_BA:SE_STU,{df_name:n[0],df_surname:n[1],df_emailaddress:em,cf_4:val(f,'r-skola')||'-',cf_41:r.indexOf('3')===0?'38':(r.indexOf('4')===0?'41':'44'),cf_35:C.stopCode||'26',cf_38:'32',cf_44:val(f,'r-spolu')||'1',cf_50:news});
       (window.knvTrack||function(){})('CompleteRegistration',{content_name:'Roadshow '+(C.stopCode==='29'?'Bratislava':'Prievidza'),status:'student'});
