@@ -1,5 +1,5 @@
 {
- "version": "0.9.22",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/267b29706052bf4c4adf5b253916955c13c83b1e.zip",
- "notes": "Odstránené slovo burza z webu (stránky zastávok Prievidza a Bratislava, SEO popisy)."
+ "version": "0.9.23",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/5a84c4bb606d94ecf62329c99d08411b5d807008.zip",
+ "notes": "Odstránené slovo burza; automatická kontrola aktualizácií naozaj každú hodinu."
 }
