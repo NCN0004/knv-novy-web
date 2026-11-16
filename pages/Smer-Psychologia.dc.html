@@ -564,13 +564,13 @@ class Component extends DCLogic {
         stops: []
       };
     });
-    var NSTOP = [['Prievidza', '2026-12-01', '1. 12. 2026'], ['Bratislava', '2027-01-26', '26. 1. 2027']];
+    var NSTOP = [['Prievidza', '2026-12-01', '1. 12. 2026', 'Zastavka-Prievidza.dc.html'], ['Bratislava', '2027-01-26', '26. 1. 2027', 'Zastavka-Bratislava.dc.html']];
     var ntd = new Date(); ntd.setHours(0, 0, 0, 0);
     var nst = NSTOP[NSTOP.length - 1];
     for (var ni = 0; ni < NSTOP.length; ni++) { if (new Date(NSTOP[ni][1] + 'T23:59:59') >= ntd) { nst = NSTOP[ni]; break; } }
     var n = shown.length;
     return {
-      nearCity: nst[0], nearDate: nst[2], nearUrl: 'Zastavka-' + nst[0] + '.dc.html',
+      nearCity: nst[0], nearDate: nst[2], nearUrl: nst[3],
       facCount: String(F.length),
       countryChips: countryChips, stopChips: stopChips,
       faculties: faculties, empty: n === 0,

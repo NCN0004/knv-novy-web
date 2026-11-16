@@ -211,7 +211,7 @@ function knv_stats_page() {
 
 	// Kliknutia na tlačidlá (pozvánky na výstavu a pod.).
 	$kl = $wpdb->get_results( $wpdb->prepare( "SELECT obj, SUM(cnt) c FROM $t WHERE day >= %s AND obj LIKE 'c:%%' AND ev='klik' GROUP BY obj ORDER BY c DESC LIMIT 30", $d30 ), ARRAY_A ); // phpcs:ignore
-	$lab = array( 'dod-pruh' => 'Žltý pruh „Registrácia na výstavu“', 'vysledky-pruh' => 'Pozvánka „Táto zastávka už prebehla“', 'dod-kalendar' => 'Pozvánka v kalendári DOD', 'smer-pruh' => 'Pruh „Stretni tieto fakulty osobne“', 'costudovat-pruh' => 'Pruh „Opýtaj sa priamo fakúlt“', 'roadshow' => 'Odkaz na výstavu / vstupenku' );
+	$lab = array( 'dod-pruh' => 'Žltý pruh „Registrácia na výstavu“', 'vysledky-pruh' => 'Pozvánka „Táto zastávka už prebehla“', 'dod-kalendar' => 'Pozvánka v kalendári DOD', 'dod-skola' => 'Pri škole v DOD: „Túto školu stretneš aj na výstave“', 'smer-pruh' => 'Pruh „Stretni tieto fakulty osobne“', 'costudovat-pruh' => 'Pruh „Opýtaj sa priamo fakúlt“', 'roadshow' => 'Odkaz na výstavu / vstupenku' );
 	echo '<h2>Kliknutia na výstavu (30 dní)</h2><p>Koľkokrát ľudia klikli z danej stránky na pozvánku alebo odkaz na výstavu Kam na vysokú.</p><table class="widefat striped" style="max-width:720px"><thead><tr><th>Stránka</th><th>Tlačidlo</th><th>Kliknutia</th></tr></thead><tbody>';
 	foreach ( $kl as $r ) {
 		$pp = explode( ':', $r['obj'] );

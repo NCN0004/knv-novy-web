@@ -100,6 +100,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 </sc-for>
 </div>
 <sc-if value="{{it.hasNote}}" hint-placeholder-val="{{ false }}"><div style="display: inline-block; margin-top: 8px; background: #FDF0F0; color: #A8222A; border-radius: 8px; font-size: 13px; font-weight: 700; padding: 4px 10px">{{it.note}}</div></sc-if>
+<sc-if value="{{it.hasMeet}}" hint-placeholder-val="{{ false }}"><a href="{{it.meetUrl}}" data-knv="dod-skola" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; background: #FFF8DC; border: 1.5px solid #D9A400; color: #393536; border-radius: 10px; font-size: 13px; font-weight: 700; padding: 5px 11px; text-decoration: none">Túto školu stretneš aj na výstave Kam na vysokú – {{it.meetTxt}} · vstup zadarmo →</a></sc-if>
 </div>
 <sc-if value="{{it.canPlan}}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{it.toggle}}" aria-pressed="{{it.inPlan}}" style="{{it.btnStyle}}">{{it.btnLabel}}</button></sc-if>
 </div>
@@ -256,6 +257,14 @@ class Component extends DCLogic {
     D.forEach(function (d) { d[3].forEach(function (it) { grand += it[2].length; }); });
     var idx = 0;
     var inviteDone = false;
+    // Vysoké školy, ktoré vystavujú na Roadshow (zdroj: zoznamy vystavovateľov KNV).
+    var EXST = [['Prievidza', '2026-12-01', '1. 12.', 'Zastavka-Prievidza.dc.html', [UK, STU, TNUAD, PEVS]], ['Bratislava', '2027-01-26', '26. 1.', 'Zastavka-Bratislava.dc.html', [UK, STU, TNUAD, UNIZA, 'Slovenská poľnohospodárska univerzita v Nitre', 'Univerzita sv. Cyrila a Metoda v Trnave', 'Univerzita Palackého v Olomouci']]];
+    var exToday = new Date(); exToday.setHours(0, 0, 0, 0);
+    var meetFor = function (uni) {
+      var hit = EXST.filter(function (s) { return new Date(s[1] + 'T23:59:59') >= exToday && s[4].indexOf(uni) !== -1; });
+      if (!hit.length) { return null; }
+      return { txt: hit.map(function (s) { return s[0] + ' ' + s[2]; }).join(' aj ') , url: hit[0][3] };
+    };
     var monthsOut = [0, 1, 2, 3].filter(function (m) { return (st.month === 'all' || st.month === m) && D.some(function (d) { return d[0] === m; }); }).map(function (m) {
       var count = 0;
       var days = D.filter(function (d) { return d[0] === m; }).map(function (d) {
@@ -265,7 +274,7 @@ class Component extends DCLogic {
           var id = ['n', 'd', 'j', 'f'][m] + d[1] + '-' + k;
           var inPlan = st.plan.indexOf(id) !== -1;
           if (inPlan) { plan.push({ date: unknown ? 'NOV ?' : d[1] + '. ' + MON[m], uni: it[0] }); }
-          return { show: st.countries.indexOf(it[1]) !== -1, uni: it[0], country: CN[it[1]][0], cBg: CN[it[1]][1], cFg: CN[it[1]][2], hasNote: !!it[3], note: it[3] || '', canPlan: !past, inPlan: inPlan, nFac: it[2].length,
+          return { show: st.countries.indexOf(it[1]) !== -1, uni: it[0], country: CN[it[1]][0], cBg: CN[it[1]][1], cFg: CN[it[1]][2], hasNote: !!it[3], note: it[3] || '', hasMeet: !!meetFor(it[0]), meetTxt: (meetFor(it[0]) || {}).txt || '', meetUrl: (meetFor(it[0]) || {}).url || '', canPlan: !past, inPlan: inPlan, nFac: it[2].length,
             facs: it[2].map(function (f) { return { name: f[0], tag: f[1] || '', hasTag: !!f[1] }; }),
             btnLabel: inPlan ? '✓ v pláne' : '+ do plánu',
             btnStyle: 'flex: none; font-family: inherit; font-size: 13px; font-weight: 700; padding: 8px 14px; min-height: 40px; border-radius: 12px; cursor: pointer; white-space: nowrap; ' + (inPlan ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #1F6A1E; border: 1.5px dashed #45B541;'),

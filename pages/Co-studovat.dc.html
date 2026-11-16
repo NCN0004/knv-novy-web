@@ -248,11 +248,11 @@ class Component extends DCLogic {
     var results = scored.filter(function (x) { return x.hit > 0; }).sort(function (a, b) { return (b.hit / b.s.t.length) - (a.hit / a.s.t.length) || b.hit - a.hit; }).slice(0, 5).map(function (x) {
       return { href: SMER_HREF[x.s.name] || 'Co-studovat.dc.html', name: x.s.name, pct: Math.round(Math.min(1, x.hit / Math.min(x.s.t.length, Math.max(1, picked.length))) * 100) + '%' };
     });
-    var NSTOP = [['Prievidza', '2026-12-01', '1. 12. 2026'], ['Bratislava', '2027-01-26', '26. 1. 2027']];
+    var NSTOP = [['Prievidza', '2026-12-01', '1. 12. 2026', 'Zastavka-Prievidza.dc.html'], ['Bratislava', '2027-01-26', '26. 1. 2027', 'Zastavka-Bratislava.dc.html']];
     var ntd = new Date(); ntd.setHours(0, 0, 0, 0);
     var nst = NSTOP[NSTOP.length - 1];
     for (var ni = 0; ni < NSTOP.length; ni++) { if (new Date(NSTOP[ni][1] + 'T23:59:59') >= ntd) { nst = NSTOP[ni]; break; } }
-    return { nearCity: nst[0], nearDate: nst[2], nearUrl: 'Zastavka-' + nst[0] + '.dc.html', interests: interests, smery: smery, results: results, hasPick: picked.length > 0, noPick: picked.length === 0 };
+    return { nearCity: nst[0], nearDate: nst[2], nearUrl: nst[3], interests: interests, smery: smery, results: results, hasPick: picked.length > 0, noPick: picked.length === 0 };
   }
 }
 </script>
