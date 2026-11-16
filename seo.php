@@ -352,8 +352,9 @@ function knv_archive_old() { return (bool) apply_filters( 'knv_archive_old', tru
 add_action( 'init', function () {
 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : ''; // phpcs:ignore
 	if ( '/knv-sitemap.xml' !== strtok( $uri, '?' ) ) { return; }
+	// Staré stránky sú archivované – doplnková sitemap už nemá čo ponúknuť, Google dostane 410 (natrvalo preč) namiesto prázdneho súboru.
+	if ( knv_archive_old() ) { status_header( 410 ); header( 'X-Robots-Tag: noindex' ); exit; }
 	$types = array_values( array_filter( knv_extra_types(), 'post_type_exists' ) );
-	if ( knv_archive_old() ) { $types = array(); }
 	$posts = $types ? get_posts( array( 'post_type' => $types, 'post_status' => 'publish', 'numberposts' => 2000, 'orderby' => 'modified', 'order' => 'DESC', 'suppress_filters' => false ) ) : array();
 	header( 'Content-Type: application/xml; charset=utf-8' );
 	header( 'X-Robots-Tag: noindex, follow' );
@@ -366,6 +367,10 @@ add_action( 'init', function () {
 	echo '</urlset>';
 	exit;
 }, 999 );
+// Kategórie článkov (napr. /kategorie/ostatne/) sa presmerúvajú – nepatria do sitemap.
+add_filter( 'rank_math/sitemap/exclude_taxonomy', function ( $exclude, $type ) {
+	return ( 'category' === $type ) ? true : $exclude;
+}, 10, 2 );
 // Zaradiť do indexu Rank Math aj do robots.txt.
 add_filter( 'rank_math/sitemap/index', function ( $xml ) {
 	if ( knv_archive_old() ) { return $xml; }
