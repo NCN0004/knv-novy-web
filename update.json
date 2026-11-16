@@ -1,5 +1,5 @@
 {
- "version": "0.9.24",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/6127292473517d32e2c586a8aea8251f38a41278.zip",
- "notes": "Sitemap: odstránená prázdna doplnková sitemap (410) a presmerované kategórie."
+ "version": "0.9.25",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/674f9f7f16a36ac7c5c62d8cdba921de4d4d2b31.zip",
+ "notes": "Opravený odkaz na výstavu v Čo študovať a smeroch, pri školách v kalendári DOD odkaz na výstavu, nový titulok úvodnej stránky."
 }
