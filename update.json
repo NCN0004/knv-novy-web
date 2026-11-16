@@ -1,5 +1,5 @@
 {
- "version": "0.9.23",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/5a84c4bb606d94ecf62329c99d08411b5d807008.zip",
- "notes": "Odstránené slovo burza; automatická kontrola aktualizácií naozaj každú hodinu."
+ "version": "0.9.24",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/6127292473517d32e2c586a8aea8251f38a41278.zip",
+ "notes": "Sitemap: odstránená prázdna doplnková sitemap (410) a presmerované kategórie."
 }
