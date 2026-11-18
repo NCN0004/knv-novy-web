@@ -1,5 +1,5 @@
 {
- "version": "0.9.30",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/88fe6e46e132119d91dbee8ece7ec6c11c21bdec.zip",
- "notes": "Pripomienky Lucie 2: registrácia je dobrovoľná (poznámka nad formulárom), plná adresa Hotel Magura, Pýtaj sa študenta dočasne vypnuté, Bratislava – vystavovatelia 2026 označení, kvíz – superschopnosť upravená."
+ "version": "0.9.31",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/832dee7682b868118620004876d862be0346a105.zip",
+ "notes": "Oprava: kalendár DOD sa nenačítal (tlač PDF obsahovala značky, ktoré web nahrádza)."
 }
