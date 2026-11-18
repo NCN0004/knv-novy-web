@@ -44,6 +44,8 @@ function knv_events() {
 			'street' => 'Námestie Jozefa Cígera Hronského 1',
 			'zip'    => '971 01',
 			'city'   => 'Prievidza',
+			// Vystavovatelia zobrazení na stránke (Google chce pole performer).
+			'performers' => array( 'Ekonomická univerzita v Bratislave', 'Univerzita Komenského v Bratislave', 'Slovenská technická univerzita v Bratislave', 'Paneurópska vysoká škola', 'VŠEM – Vysoká škola ekonómie a manažmentu', 'Trenčianska univerzita Alexandra Dubčeka v Trenčíne', 'Univerzita Tomáše Bati ve Zlíně' ),
 		),
 		'Zastavka-Bratislava' => array(
 			'name'   => 'Kam na vysokú – výstava vysokých škôl Bratislava',
@@ -218,7 +220,10 @@ function knv_seo_head( $knv, $is_draft, $post_cfg = null ) {
 			'location' => array( '@type' => 'Place', 'name' => $e['place'], 'address' => array( '@type' => 'PostalAddress', 'streetAddress' => $e['street'], 'postalCode' => $e['zip'], 'addressLocality' => $e['city'], 'addressCountry' => 'SK' ) ),
 			'offers' => array( '@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'EUR', 'availability' => 'https://schema.org/InStock', 'url' => $url, 'validFrom' => '2026-10-01T00:00:00+02:00' ),
 			'organizer' => array( '@id' => $home . '#organization' ),
-			'audience' => array( '@type' => 'EducationalAudience', 'educationalRole' => 'student', 'audienceType' => 'študenti 3. a 4. ročníka stredných škôl, rodičia a výchovní poradcovia' ),
+			'performer' => ! empty( $e['performers'] )
+				? array_map( function ( $n ) { return array( '@type' => 'CollegeOrUniversity', 'name' => $n ); }, $e['performers'] )
+				: array( array( '@type' => 'Organization', 'name' => 'Vysoké školy zo Slovenska a Česka', 'url' => $url ) ),
+			'audience' => array( '@type' => 'EducationalAudience', 'educationalRole' => 'student', 'audienceType' => 'študenti stredných škôl, rodičia a výchovní poradcovia' ),
 			'superEvent' => array( '@type' => 'EventSeries', 'name' => 'Roadshow Kam na vysokú 2026/27', 'url' => $home ),
 		);
 	}
