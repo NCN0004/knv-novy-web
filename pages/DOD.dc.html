@@ -39,7 +39,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <h1 class="h1m" style="font-size: 64px; line-height: 1.04; letter-spacing: -0.035em; font-weight: 800; margin: 6px 0 18px">Dni otvorených <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 8px">dverí</span></h1>
 <p style="font-size: 19px; line-height: 1.55; color: #393536; max-width: 760px; margin: 0 0 22px"><strong>DOD vysoké školy 2026</strong> na jednom mieste: termíny dní otvorených dverí vysokých škôl a fakúlt na Slovensku aj v Česku. Vyber si mesiac, pridaj si DOD do plánu a nič nezmeškáš.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 28px">
-<span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 18px; padding: 6px 16px 7px; border-radius: 14px 9px 15px 8px; transform: rotate(-2deg); display: inline-block">november – december 2026</span>
+<span style="background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 18px; padding: 6px 16px 7px; border-radius: 14px 9px 15px 8px; transform: rotate(-2deg); display: inline-block">{{rangeLabel}}</span>
 <span style="font-size: 18px; color: #4A4546">{{totalLabel}} na vysokých školách na Slovensku, v Česku aj v Holandsku</span>
 </div>
 <div class="stackm" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; background: #FFFFFF; border: 1.5px solid #CFCAC8; border-radius: 20px; padding: 12px 16px">
@@ -72,6 +72,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <div class="wrap padm stackm" style="padding-top: 48px; padding-bottom: 88px; display: flex; gap: 36px; align-items: flex-start">
 
 <div style="flex: 1 1 740px; min-width: 0">
+<sc-if value="{{hasPast}}" hint-placeholder-val="{{ true }}"><div style="display: flex; justify-content: flex-end; margin: -24px 0 16px"><button type="button" onClick="{{togglePast}}" data-knv="dod-minule" style="font-family: inherit; font-size: 14px; font-weight: 600; color: #575152; background: none; border: none; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 8px 4px; min-height: 40px">{{pastLabel}}</button></div></sc-if>
 <sc-for list="{{months}}" as="mo" hint-placeholder-count="2">
 <div style="margin-bottom: 44px">
 <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px dashed #CFCAC8">
@@ -100,7 +101,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 </sc-for>
 </div>
 <sc-if value="{{it.hasNote}}" hint-placeholder-val="{{ false }}"><div style="display: inline-block; margin-top: 8px; background: #FDF0F0; color: #A8222A; border-radius: 8px; font-size: 13px; font-weight: 700; padding: 4px 10px">{{it.note}}</div></sc-if>
-<sc-if value="{{it.hasMeet}}" hint-placeholder-val="{{ false }}"><a href="{{it.meetUrl}}" data-knv="dod-skola" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; background: #FFF8DC; border: 1.5px solid #D9A400; color: #393536; border-radius: 10px; font-size: 13px; font-weight: 700; padding: 5px 11px; text-decoration: none">Túto školu stretneš aj na výstave Kam na vysokú – {{it.meetTxt}} · vstup zadarmo →</a></sc-if>
+<sc-if value="{{it.hasMeet}}" hint-placeholder-val="{{ false }}"><a href="{{it.meetUrl}}" data-knv="dod-skola" style="display: inline-block; line-height: 1.45; margin-top: 8px; background: #FFF8DC; border: 1.5px solid #D9A400; color: #393536; border-radius: 10px; font-size: 13px; font-weight: 700; padding: 5px 11px; text-decoration: none">Túto školu stretneš aj na výstave Kam na vysokú – {{it.meetTxt}} · vstup zadarmo →</a></sc-if>
 </div>
 <sc-if value="{{it.canPlan}}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{it.toggle}}" aria-pressed="{{it.inPlan}}" style="{{it.btnStyle}}">{{it.btnLabel}}</button></sc-if>
 </div>
@@ -118,8 +119,8 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <a class="lift stackm" href="Main.dc.html" style="text-decoration: none; color: #393536; position: relative; margin-top: 8px; background: #F0F5EE; border: 2px solid #393536; border-radius: 24px; padding: 28px 30px; box-shadow: 7px 7px 0 #CFE7CB; display: flex; gap: 24px; align-items: center; justify-content: space-between">
 <span style="position: absolute; top: -14px; left: 24px; background: #D42A33; color: #FFFFFF; font-weight: 800; font-style: italic; font-size: 13px; padding: 4px 12px 5px; border-radius: 10px 6px 11px 5px; transform: rotate(-3deg)">Nezabudni</span>
 <span style="display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 22px; font-weight: 800">Výstava vysokých škôl Kam na vysokú</span>
-<span style="font-size: 16px; color: #4A4546">Bratislava · 26. 1. 2027 · 9:00 – 12:30 · vstup zadarmo</span>
+<span style="font-size: 22px; font-weight: 800">Výstava vysokých škôl Kam na vysokú – Bratislava, 26. 1. 2027</span>
+<span style="font-size: 16px; color: #4A4546">9:00 – 12:30 · vstup zadarmo</span>
 <span style="font-size: 14px; color: #575152"><strong>Čo sa spýtať na DOD:</strong> študijné programy · podmienky prijatia · ubytovanie · štipendiá</span>
 </span>
 <span style="flex: none; font-weight: 700; color: #1F6A1E">Viac o Roadshow →</span>
@@ -138,8 +139,8 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <sc-for list="{{plan}}" as="p" hint-placeholder-count="2"><div style="display: flex; gap: 10px; font-size: 15px; line-height: 1.35"><span style="flex: none; font-weight: 800; color: #C8232C; min-width: 56px">{{p.date}}</span><span style="font-weight: 600">{{p.uni}}</span></div></sc-for>
 </div>
 <sc-if value="{{planFull}}" hint-placeholder-val="{{ false }}">
-<button type="button" style="margin-top: 18px; width: 100%; min-height: 48px; border: none; border-radius: 14px; background: #2B7F29; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Stiahnuť do kalendára (.ics)</button>
-<button type="button" style="margin-top: 8px; width: 100%; min-height: 44px; border: 1.5px solid #CFCAC8; border-radius: 14px; background: #FFFFFF; color: #393536; font-family: inherit; font-weight: 600; font-size: 14px; cursor: pointer">Stiahnuť ako PDF na vytlačenie</button>
+<button type="button" style="margin-top: 18px; width: 100%; min-height: 48px; border: none; border-radius: 14px; background: #2B7F29; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer" onClick="{{dlIcs}}">Stiahnuť do kalendára (.ics)</button>
+<button type="button" style="margin-top: 8px; width: 100%; min-height: 44px; border: 1.5px solid #CFCAC8; border-radius: 14px; background: #FFFFFF; color: #393536; font-family: inherit; font-weight: 600; font-size: 14px; cursor: pointer" onClick="{{dlPdf}}">Stiahnuť ako PDF na vytlačenie</button>
 </sc-if>
 </aside>
 
@@ -214,7 +215,9 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { countries: ['SK', 'CZ', 'NL'], month: 'all', plan: ['n7-0', 'n27-1'] };
+    var saved = [];
+    try { saved = JSON.parse(window.localStorage.getItem('knv_dod_plan') || '[]') || []; } catch (e) { saved = []; }
+    this.state = { countries: ['SK', 'CZ', 'NL'], month: 'all', plan: Array.isArray(saved) ? saved : [], showPast: false };
   }
   renderVals() {
     var self = this;
@@ -263,7 +266,7 @@ class Component extends DCLogic {
           if (!grp[2].some(function (e) { return e[0] === name; })) { grp[2].push(typeof fc === 'string' ? [fc] : fc); }
         });
       });
-      D.sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+      D.sort(function (a, b) { return a[0] - b[0] || (a[1] || 99) - (b[1] || 99); });
     })();
     var CN = { SK: ['SLOVENSKO', '#F0F5EE', '#1F6A1E'], CZ: ['ČESKO', '#FDF0F0', '#A8222A'], NL: ['HOLANDSKO', '#F6F2EA', '#5E4A1F'] };
     var MON = ['NOV', 'DEC', 'JAN', 'FEB', 'MAR', 'APR', 'MÁJ', 'JÚN'];
@@ -284,25 +287,66 @@ class Component extends DCLogic {
       if (!hit.length) { return null; }
       return { txt: hit.map(function (s) { return s[0] + ' ' + s[2]; }).join(' aj ') , url: hit[0][3] };
     };
+    var IDP = ['n', 'd', 'j', 'f', 'm', 'a', 'y', 'u'];
+    var ymd = function (m, dd) { var y = 2026 + Math.floor((10 + m) / 12), mo = (10 + m) % 12; return { y: y, mo: mo, d: dd }; };
+    var pastCount = 0;
+    D.forEach(function (d) {
+      var m = d[0], unknown = d[1] === 0;
+      var isPast = unknown ? new Date(2026, 11 + m, 1) <= today : new Date(2026, 10 + m, d[1]) < today;
+      d[3].forEach(function (it, k) {
+        if (isPast && st.countries.indexOf(it[1]) !== -1) { pastCount++; }
+        var id = IDP[m] + d[1] + '-' + k;
+        if (st.plan.indexOf(id) !== -1) { var q = ymd(m, d[1]); plan.push({ date: unknown ? 'NOV ?' : d[1] + '. ' + MON[m], uni: it[0], unknown: unknown, y: q.y, mo: q.mo, d: d[1], facs: it[2].map(function (f) { return f[0] + (f[1] ? ' (' + f[1] + ')' : ''); }), note: it[3] || '' }); }
+      });
+    });
+    var savePlan = function (p) { try { window.localStorage.setItem('knv_dod_plan', JSON.stringify(p)); } catch (e) {} };
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    var dlIcs = function () {
+      var L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Kam na vysoku//DOD plan//SK', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'X-WR-CALNAME:Môj DOD plán'];
+      var esc = function (t) { return String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n'); };
+      var now = new Date(); var stamp = now.getUTCFullYear() + pad(now.getUTCMonth() + 1) + pad(now.getUTCDate()) + 'T' + pad(now.getUTCHours()) + pad(now.getUTCMinutes()) + '00Z';
+      plan.forEach(function (p, i) {
+        if (p.unknown) { return; }
+        var a = new Date(p.y, p.mo, p.d), b = new Date(p.y, p.mo, p.d + 1);
+        var f = function (x) { return x.getFullYear() + pad(x.getMonth() + 1) + pad(x.getDate()); };
+        L.push('BEGIN:VEVENT', 'UID:dod-' + f(a) + '-' + i + '-' + now.getTime() + '@kamnavysoku.sk', 'DTSTAMP:' + stamp, 'DTSTART;VALUE=DATE:' + f(a), 'DTEND;VALUE=DATE:' + f(b),
+          'SUMMARY:' + esc('DOD – ' + p.uni), 'DESCRIPTION:' + esc(p.facs.join(', ') + (p.note ? '\n' + p.note : '') + '\nPresný čas a program over na webe školy.\nhttps://kamnavysoku.sk/dni-otvorenych-dveri/'),
+          'URL:https://kamnavysoku.sk/dni-otvorenych-dveri/', 'TRANSP:TRANSPARENT', 'END:VEVENT');
+      });
+      L.push('END:VCALENDAR');
+      var blob = new Blob([L.join('\r\n') + '\r\n'], { type: 'text/calendar;charset=utf-8' });
+      var url = URL.createObjectURL(blob); var a = document.createElement('a'); a.href = url; a.download = 'moj-dod-plan.ics';
+      document.body.appendChild(a); a.click(); setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1500);
+      try { if (window.fbq) { window.fbq('trackCustom', 'DODPlanICS'); } } catch (e) {}
+    };
+    var dlPdf = function () {
+      var h = function (t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
+      var rows = plan.map(function (p) { return '<tr><td class="d">' + h(p.date) + '</td><td><b>' + h(p.uni) + '</b><div>' + h(p.facs.join(', ')) + '</div>' + (p.note ? '<div class="n">' + h(p.note) + '</div>' : '') + '</td><td class="c"></td></tr>'; }).join('');
+      var doc = '<!doctype html><html lang="sk"><head><meta charset="utf-8"><title>Môj DOD plán – Kam na vysokú</title><style>body{font-family:Arial,Helvetica,sans-serif;color:#393536;margin:32px}h1{font-size:26px;margin:0 0 4px}p{color:#575152;margin:0 0 20px;font-size:13px}table{width:100%;border-collapse:collapse}td{border-bottom:1px solid #CFCAC8;padding:10px 8px;vertical-align:top;font-size:14px}td div{color:#575152;font-size:12.5px;margin-top:3px}td.d{width:90px;font-weight:700;color:#2B7F29;white-space:nowrap}td.c{width:28px}td.c:after{content:"";display:inline-block;width:16px;height:16px;border:1.5px solid #393536;border-radius:3px}.n{color:#A8222A!important}.f{margin-top:24px;font-size:12px;color:#575152}</style></head><body><h1>Môj DOD plán</h1><p>Dni otvorených dverí, ktoré si si vybral na kamnavysoku.sk. Presný čas a program over na webe školy.</p><table>' + rows + '</table><div class="f">Nestíhaš všetky DOD? Na výstave Kam na vysokú stretneš desiatky fakúlt naraz – kamnavysoku.sk</div></body></html>';
+      var fr = document.createElement('iframe'); fr.setAttribute('aria-hidden', 'true'); fr.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0';
+      document.body.appendChild(fr);
+      var w = fr.contentWindow; w.document.open(); w.document.write(doc); w.document.close();
+      setTimeout(function () { try { w.focus(); w.print(); } catch (e) { var nw = window.open('', '_blank'); if (nw) { nw.document.write(doc); nw.document.close(); nw.print(); } } setTimeout(function () { if (fr.parentNode) { fr.parentNode.removeChild(fr); } }, 60000); }, 300);
+      try { if (window.fbq) { window.fbq('trackCustom', 'DODPlanPDF'); } } catch (e) {}
+    };
     var monthsOut = [0, 1, 2, 3, 4, 5, 6, 7].filter(function (m) { return (st.month === 'all' || st.month === m) && D.some(function (d) { return d[0] === m; }); }).map(function (m) {
       var count = 0;
       var days = D.filter(function (d) { return d[0] === m; }).map(function (d) {
         var unknown = d[1] === 0;
-        var past = !unknown && new Date(2026, 10 + m, d[1]) < today;
+        var past = unknown ? new Date(2026, 11 + m, 1) <= today : new Date(2026, 10 + m, d[1]) < today;
         var items = d[3].map(function (it, k) {
           var id = ['n', 'd', 'j', 'f', 'm', 'a', 'y', 'u'][m] + d[1] + '-' + k;
           var inPlan = st.plan.indexOf(id) !== -1;
-          if (inPlan) { plan.push({ date: unknown ? 'NOV ?' : d[1] + '. ' + MON[m], uni: it[0] }); }
           return { show: st.countries.indexOf(it[1]) !== -1, uni: it[0], country: CN[it[1]][0], cBg: CN[it[1]][1], cFg: CN[it[1]][2], hasNote: !!it[3], note: it[3] || '', hasMeet: !!meetFor(it[0]), meetTxt: (meetFor(it[0]) || {}).txt || '', meetUrl: (meetFor(it[0]) || {}).url || '', canPlan: !past, inPlan: inPlan, nFac: it[2].length,
             facs: it[2].map(function (f) { return { name: f[0], tag: f[1] || '', hasTag: !!f[1] }; }),
             btnLabel: inPlan ? '✓ v pláne' : '+ do plánu',
             btnStyle: 'flex: none; font-family: inherit; font-size: 13px; font-weight: 700; padding: 8px 14px; min-height: 40px; border-radius: 12px; cursor: pointer; white-space: nowrap; ' + (inPlan ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #1F6A1E; border: 1.5px dashed #45B541;'),
-            toggle: function () { var p = self.state.plan.slice(); var x = p.indexOf(id); if (x === -1) { p.push(id); } else { p.splice(x, 1); } self.setState({ plan: p }); } };
+            toggle: function () { var p = self.state.plan.slice(); var x = p.indexOf(id); if (x === -1) { p.push(id); } else { p.splice(x, 1); } savePlan(p); self.setState({ plan: p }); } };
         }).filter(function (it) { return it.show; });
-        items.forEach(function (it) { count += it.nFac; });
         var i = idx++;
         return { mon: unknown ? 'NOV' : MON[m], day: unknown ? '?' : String(d[1]), wd: unknown ? '' : d[2], unknown: unknown, past: past, op: past ? '0.6' : '1', shadow: shadows[i % 3], rot: rots[i % 4], items: items };
-      }).filter(function (d) { return d.items.length > 0; });
+      }).filter(function (d) { return d.items.length > 0 && (st.showPast || !d.past); });
+      days.forEach(function (d) { d.items.forEach(function (it) { count += it.nFac; }); });
       days.forEach(function (d) { d.invite = false; if (!d.past && !d.unknown && !inviteDone) { d.invite = true; inviteDone = true; } });
       return { name: MNAME[m], count: count + (count === 1 ? ' podujatie' : (count > 1 && count < 5 ? ' podujatia' : ' podujatí')), days: days };
     }).filter(function (mo) { return mo.days.length > 0; });
@@ -322,11 +366,13 @@ class Component extends DCLogic {
     var near = STOPD[STOPD.length - 1];
     for (var si = 0; si < STOPD.length; si++) { if (new Date(STOPD[si][1] + 'T23:59:59') >= tday) { near = STOPD[si]; break; } }
     return {
+      rangeLabel: (function () { var ms = D.map(function (d) { return d[0]; }).filter(function (m) { var y = 2026 + Math.floor((10 + m) / 12), mo = (10 + m) % 12; return new Date(y, mo + 1, 1) > today; }); if (!ms.length) { return 'november 2026'; } var lo = Math.min.apply(null, ms), hi = Math.max.apply(null, ms); var N = ['november 2026', 'december 2026', 'január 2027', 'február 2027', 'marec 2027', 'apríl 2027', 'máj 2027', 'jún 2027']; return lo === hi ? N[lo] : (Math.floor((10 + lo) / 12) === Math.floor((10 + hi) / 12) ? N[lo].replace(/ \d+$/, '') : N[lo]) + ' – ' + N[hi]; })(),
       nearCity: near[0], nearDate: near[2], nearUrl: near[3],
       totalLabel: grand + ' dní otvorených dverí',
       countryChips: countryChips, monthChips: monthChips, months: monthsOut, empty: monthsOut.length === 0,
       plan: plan, planCount: plan.length + ' ' + (plan.length === 1 ? 'termín' : (plan.length > 1 && plan.length < 5 ? 'termíny' : 'termínov')),
-      planEmpty: plan.length === 0, planFull: plan.length > 0
+      planEmpty: plan.length === 0, planFull: plan.length > 0, dlIcs: dlIcs, dlPdf: dlPdf,
+      hasPast: pastCount > 0, pastLabel: st.showPast ? 'Skryť minulé' : 'Zobraziť aj minulé (' + pastCount + ')', togglePast: function () { self.setState({ showPast: !self.state.showPast }); }
     };
   }
 }

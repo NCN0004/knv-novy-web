@@ -93,7 +93,7 @@ input,select{font-family:inherit}
 </section>
 
 <!-- ARCHÍV -->
-<section>
+<section id="archiv">
 <div class="wrap padm" style="padding-top: 88px; padding-bottom: 88px">
 <div class="stackm" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 36px">
 <h2 class="h2m" style="font-size: 40px; letter-spacing: -0.03em; margin: 0; font-weight: 800">Archív <span style="background: linear-gradient(transparent 58%, #F8CFD1 58%); padding: 0 6px">čísel</span></h2>
@@ -121,7 +121,7 @@ input,select{font-family:inherit}
 <div style="flex: 1 1 380px; min-width: 0">
 <span style="font-family: Caveat, cursive; font-size: 30px; font-weight: 700; color: #C8232C">Pre výchovných poradcov</span>
 <h2 class="h2m" style="font-size: 40px; letter-spacing: -0.03em; margin: 6px 0 14px; font-weight: 800">Časopis do vašej školy zadarmo</h2>
-<p style="font-size: 17px; color: #4A4546; line-height: 1.6; margin: 0 0 20px">Pošleme vám každé nové číslo v počte kusov, aký potrebujete pre maturitné ročníky. Poštovné neplatíte.</p>
+<p style="font-size: 17px; color: #4A4546; line-height: 1.6; margin: 0 0 20px">Pošleme vám 3 výtlačky každého nového čísla – pre výchovného poradcu a do zborovne či knižnice. Študentom stačí poslať odkaz na <a href="#archiv" style="color: #2B7F29; font-weight: 700">online verziu</a>, listovať v nej môžu zadarmo. Poštovné neplatíte.</p>
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px">
 <span style="display: flex; gap: 10px; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B7F29" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg>Vychádza 3× ročne – január, apríl, september</span>
 <span style="display: flex; gap: 10px; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B7F29" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg>Doručenie priamo do školy</span>
@@ -138,13 +138,9 @@ input,select{font-family:inherit}
 <div style="flex: 1 1 0; display: flex; flex-direction: column; gap: 6px"><label for="c-meno" style="font-size: 14px; font-weight: 700">Kontaktná osoba</label><input id="c-meno" type="text" autocomplete="name" style="height: 50px; border: 1.5px solid #CFCAC8; border-radius: 12px; padding: 0 14px; font-size: 16px"></div>
 <div style="flex: 1 1 0; display: flex; flex-direction: column; gap: 6px"><label for="c-email" style="font-size: 14px; font-weight: 700">E-mail</label><input id="c-email" type="email" autocomplete="email" style="height: 50px; border: 1.5px solid #CFCAC8; border-radius: 12px; padding: 0 14px; font-size: 16px"></div>
 </div>
-<div style="background: #F0F5EE; border-radius: 18px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
-<span style="font-weight: 800; font-size: 16px">Počet kusov</span>
-<span style="display: flex; align-items: center; gap: 8px">
-<button type="button" onClick="{{minus}}" aria-label="Menej kusov" style="width: 44px; height: 44px; border-radius: 12px; border: 1.5px solid #B5D3B2; background: #FFFFFF; font-size: 22px; font-weight: 700; color: #1F6A1E; cursor: pointer; font-family: inherit">−</button>
-<span style="min-width: 56px; text-align: center; font-size: 26px; font-weight: 800">{{qty}}</span>
-<button type="button" onClick="{{plus}}" aria-label="Viac kusov" style="width: 44px; height: 44px; border-radius: 12px; border: 1.5px solid #B5D3B2; background: #FFFFFF; font-size: 22px; font-weight: 700; color: #1F6A1E; cursor: pointer; font-family: inherit">+</button>
-</span>
+<div style="background: #F0F5EE; border-radius: 18px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<span style="font-weight: 800; font-size: 16px">Počet výtlačkov</span>
+<span style="font-size: 16px; color: #1F6A1E; font-weight: 700">3 ks z každého čísla · zadarmo</span>
 </div>
 <button type="submit" style="height: 56px; border: none; background: #2B7F29; color: #FFFFFF; font-weight: 700; font-size: 17px; border-radius: 14px; cursor: pointer">Objednať zadarmo</button>
 </div>
@@ -153,7 +149,7 @@ input,select{font-family:inherit}
 <div role="status" style="text-align: center; padding: 28px 8px; display: flex; flex-direction: column; align-items: center; gap: 10px">
 <svg aria-hidden="true" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2B7F29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg>
 <span style="font-size: 24px; font-weight: 800">Objednávka prijatá</span>
-<span style="font-size: 16px; color: #4A4546">Najbližšie číslo vám pošleme v počte {{qty}} ks.</span>
+<span style="font-size: 16px; color: #4A4546">Najbližšie číslo vám pošleme v počte 3 ks. Odkaz na online verziu môžete medzitým poslať študentom.</span>
 </div>
 </sc-if>
 <p style="font-size: 13px; line-height: 1.5; color: #575152; margin: 4px 0 0">Údaje použijeme len na vybavenie objednávky. Viac v časti <a href="Ochrana-udajov.dc.html" style="color: #2B7F29">Ochrana osobných údajov</a>.</p>
@@ -225,7 +221,7 @@ input,select{font-family:inherit}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { qty: 60, sent: false };
+    this.state = { sent: false };
   }
   renderVals() {
     var self = this;
@@ -240,9 +236,6 @@ class Component extends DCLogic {
     issues = issues.map(function (x, k) { var t = IT[k % 3]; return Object.assign({}, x, { tagBg: t[0], blob: t[1], tint: t[2], meta: x.href === '#' ? 'Čoskoro online' : 'Listovať online' }); });
     return {
       issues: issues,
-      qty: String(st.qty),
-      minus: function () { self.setState({ qty: Math.max(10, self.state.qty - 10) }); },
-      plus: function () { self.setState({ qty: self.state.qty + 10 }); },
       sent: st.sent, notSent: !st.sent,
       submit: function (e) { if (e && e.preventDefault) { e.preventDefault(); } self.setState({ sent: true }); }
     };

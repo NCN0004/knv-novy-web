@@ -66,6 +66,19 @@ if ( ! empty( $knv['post'] ) ) {
 	$clean = preg_replace( '#<iframe([^>]*)src="(?!https://(www\\.)?(youtube\\.com|youtube-nocookie\\.com|player\\.vimeo\\.com)/)[^"]*"[^>]*></iframe>#', '', $clean );
 	// GDPR: YouTube bez sledovacích cookies.
 	$clean = str_replace( array( 'https://www.youtube.com/embed/', 'https://youtube.com/embed/' ), 'https://www.youtube-nocookie.com/embed/', $clean );
+	// Starší článok o otázkach na výstave: namiesto termínov z roku 2024 aktuálne termíny Roadshow, video končí pred starými termínmi (1:30).
+	if ( 'ake-otazky-sa-urcite-spytajte-na-vystave-kam-na-vysoku-na-toto-nesmiete-zabudnut' === $post->post_name ) {
+		$today = current_time( 'Y-m-d' );
+		$li    = '';
+		foreach ( array( array( '2026-12-01', 'Prievidza', '1. 12. 2026', 'Zastavka-Prievidza' ), array( '2027-01-26', 'Bratislava', '26. 1. 2027', 'Zastavka-Bratislava' ) ) as $st ) {
+			if ( $st[0] >= $today ) { $li .= '<li><a href="' . esc_url( knv_link( $st[3] ) ) . '"><strong>' . esc_html( $st[1] ) . '</strong> – ' . esc_html( $st[2] ) . '</a>, vstup zadarmo</li>'; }
+		}
+		$new = '<p><strong>Najbližšie výstavy Kam na vysokú:</strong></p>' . ( $li ? '<ul>' . $li . '</ul>' : '' ) . '<p>Všetky aktuálne termíny a registráciu nájdete na stránke <a href="' . esc_url( home_url( '/' ) ) . '">Roadshow Kam na vysokú</a>.</p>';
+		$clean = preg_replace( '#<p>\s*Termíny výstavy Kam na vysokú \d{4}[^<]*</p>\s*<p>\s*•.*?</p>#us', $new, $clean, 1 );
+		$clean = str_replace( array( 'návšteva univerzitného veľtrhu Kam na vysokú v siedmich mestách na Slovensku', 'poslúžiť skvelá pomôcka' ), array( 'návšteva výstavy vysokých škôl Kam na vysokú', 'poslúžiť ako skvelá pomôcka' ), $clean );
+		$clean = preg_replace( '#(<iframe[^>]*src="https://www\.youtube-nocookie\.com/embed/umtt5lBEUKY)(\?[^"]*)?"#', '$1?end=90&amp;rel=0"', $clean );
+		$knv_updated = '18. 11. 2026';
+	}
 	$cats  = get_the_category( $pid );
 	$words = str_word_count( wp_strip_all_tags( $clean ) );
 	$img   = get_the_post_thumbnail_url( $pid, 'large' );
@@ -73,7 +86,7 @@ if ( ! empty( $knv['post'] ) ) {
 		'title' => html_entity_decode( wp_strip_all_tags( get_the_title( $pid ) ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ),
 		'lead'  => has_excerpt( $pid ) ? wp_strip_all_tags( get_the_excerpt( $pid ) ) : '',
 		'cat'   => $cats ? $cats[0]->name : 'Články',
-		'meta'  => get_the_date( 'j. n. Y', $pid ) . ' · ' . max( 1, (int) round( $words / 200 ) ) . ' min čítania',
+		'meta'  => ( ! empty( $knv_updated ) ? 'aktualizované ' . $knv_updated : get_the_date( 'j. n. Y', $pid ) ) . ' · ' . max( 1, (int) round( $words / 200 ) ) . ' min čítania',
 		'img'   => $img ? $img : '',
 		'html'  => $clean,
 		'url'   => get_permalink( $pid ),
