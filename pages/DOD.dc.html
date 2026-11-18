@@ -246,9 +246,28 @@ class Component extends DCLogic {
       [1, 18, 'PIA', [['Vysoká škola ekonomická v Praze', 'CZ', [['Celouniverzitné DOD']]]]],
       [3, 19, 'PIA', [[AOS, 'SK', [['Celá akadémia, Liptovský Mikuláš', 'od 9:00, registrácia online']]]]]
     ];
+    // Termíny z formulára pre vysoké školy (plugin: pages/dod-formular.json → window.KNV.dodx). Každé ráno ich dopĺňa Claude.
+    (function () {
+      var DX = (window.KNV && window.KNV.dodx) || [];
+      var WDN = ['NED', 'PON', 'UTO', 'STR', 'ŠTV', 'PIA', 'SOB'];
+      DX.forEach(function (x) {
+        var p = String(x.date || '').split('-'); if (p.length !== 3) { return; }
+        var y = +p[0], mo = +p[1], dd = +p[2];
+        var m = (y - 2026) * 12 + mo - 11; if (m < 0 || m > 7) { return; }
+        var day = D.filter(function (d) { return d[0] === m && d[1] === dd; })[0];
+        if (!day) { day = [m, dd, WDN[new Date(y, mo - 1, dd).getDay()], []]; D.push(day); }
+        var grp = day[3].filter(function (g) { return g[0] === x.uni; })[0];
+        if (!grp) { grp = [x.uni, x.cc || 'SK', []]; day[3].push(grp); }
+        (x.facs || []).forEach(function (fc) {
+          var name = typeof fc === 'string' ? fc : fc[0];
+          if (!grp[2].some(function (e) { return e[0] === name; })) { grp[2].push(typeof fc === 'string' ? [fc] : fc); }
+        });
+      });
+      D.sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+    })();
     var CN = { SK: ['SLOVENSKO', '#F0F5EE', '#1F6A1E'], CZ: ['ČESKO', '#FDF0F0', '#A8222A'], NL: ['HOLANDSKO', '#F6F2EA', '#5E4A1F'] };
-    var MON = ['NOV', 'DEC', 'JAN', 'FEB'];
-    var MNAME = ['November 2026', 'December 2026', 'Január 2027', 'Február 2027'];
+    var MON = ['NOV', 'DEC', 'JAN', 'FEB', 'MAR', 'APR', 'MÁJ', 'JÚN'];
+    var MNAME = ['November 2026', 'December 2026', 'Január 2027', 'Február 2027', 'Marec 2027', 'Apríl 2027', 'Máj 2027', 'Jún 2027'];
     var shadows = ['#CFE7CB', '#F8CFD1', '#F2E8DA'];
     var rots = ['-3deg', '2deg', '-1.5deg', '3deg'];
     var today = new Date(); today.setHours(0, 0, 0, 0);
@@ -258,20 +277,20 @@ class Component extends DCLogic {
     var idx = 0;
     var inviteDone = false;
     // Vysoké školy, ktoré vystavujú na Roadshow (zdroj: zoznamy vystavovateľov KNV).
-    var EXST = [['Prievidza', '2026-12-01', '1. 12.', 'Zastavka-Prievidza.dc.html', [UK, STU, TNUAD, PEVS]], ['Bratislava', '2027-01-26', '26. 1.', 'Zastavka-Bratislava.dc.html', [UK, STU, TNUAD, UNIZA, 'Slovenská poľnohospodárska univerzita v Nitre', 'Univerzita sv. Cyrila a Metoda v Trnave', 'Univerzita Palackého v Olomouci']]];
+    var EXST = [['Prievidza', '2026-12-01', '1. 12.', 'Zastavka-Prievidza.dc.html', [UK, STU, TNUAD, PEVS]], ['Bratislava', '2027-01-26', '26. 1.', 'Zastavka-Bratislava.dc.html', [UK, STU, TNUAD, UNIZA, 'Slovenská poľnohospodárska univerzita v Nitre', 'Univerzita sv. Cyrila a Metoda v Trnave', 'Univerzita Palackého v Olomouci', 'Trnavská univerzita v Trnave']]];
     var exToday = new Date(); exToday.setHours(0, 0, 0, 0);
     var meetFor = function (uni) {
       var hit = EXST.filter(function (s) { return new Date(s[1] + 'T23:59:59') >= exToday && s[4].indexOf(uni) !== -1; });
       if (!hit.length) { return null; }
       return { txt: hit.map(function (s) { return s[0] + ' ' + s[2]; }).join(' aj ') , url: hit[0][3] };
     };
-    var monthsOut = [0, 1, 2, 3].filter(function (m) { return (st.month === 'all' || st.month === m) && D.some(function (d) { return d[0] === m; }); }).map(function (m) {
+    var monthsOut = [0, 1, 2, 3, 4, 5, 6, 7].filter(function (m) { return (st.month === 'all' || st.month === m) && D.some(function (d) { return d[0] === m; }); }).map(function (m) {
       var count = 0;
       var days = D.filter(function (d) { return d[0] === m; }).map(function (d) {
         var unknown = d[1] === 0;
         var past = !unknown && new Date(2026, 10 + m, d[1]) < today;
         var items = d[3].map(function (it, k) {
-          var id = ['n', 'd', 'j', 'f'][m] + d[1] + '-' + k;
+          var id = ['n', 'd', 'j', 'f', 'm', 'a', 'y', 'u'][m] + d[1] + '-' + k;
           var inPlan = st.plan.indexOf(id) !== -1;
           if (inPlan) { plan.push({ date: unknown ? 'NOV ?' : d[1] + '. ' + MON[m], uni: it[0] }); }
           return { show: st.countries.indexOf(it[1]) !== -1, uni: it[0], country: CN[it[1]][0], cBg: CN[it[1]][1], cFg: CN[it[1]][2], hasNote: !!it[3], note: it[3] || '', hasMeet: !!meetFor(it[0]), meetTxt: (meetFor(it[0]) || {}).txt || '', meetUrl: (meetFor(it[0]) || {}).url || '', canPlan: !past, inPlan: inPlan, nFac: it[2].length,
@@ -293,7 +312,8 @@ class Component extends DCLogic {
         style: 'font-family: inherit; font-size: 12px; font-weight: 800; letter-spacing: 0.05em; padding: 8px 14px; min-height: 40px; border-radius: 999px; cursor: pointer; ' + (on ? 'background: ' + CN[k][1] + '; color: ' + CN[k][2] + '; border: 1.5px solid ' + CN[k][2] + ';' : 'background: #FFFFFF; color: #9A9495; border: 1.5px dashed #CFCAC8;'),
         toggle: function () { var c = self.state.countries.slice(); var x = c.indexOf(k); if (x === -1) { c.push(k); } else { c.splice(x, 1); } self.setState({ countries: c }); } };
     });
-    var monthChips = [['all', 'Všetko'], [0, 'November'], [1, 'December'], [3, 'Február']].map(function (x) {
+    var MCH = ['November', 'December', 'Január', 'Február', 'Marec', 'Apríl', 'Máj', 'Jún'];
+    var monthChips = [['all', 'Všetko']].concat([0, 1, 2, 3, 4, 5, 6, 7].filter(function (m) { return D.some(function (d) { return d[0] === m; }); }).map(function (m) { return [m, MCH[m]]; })).map(function (x) {
       var on = st.month === x[0];
       return { label: x[1], pick: function () { self.setState({ month: x[0] }); }, style: 'font-family: inherit; font-size: 14px; font-weight: 600; padding: 8px 16px; min-height: 40px; border-radius: 999px; cursor: pointer; ' + (on ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #393536; border: 1.5px solid #CFCAC8;') };
     });

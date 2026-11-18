@@ -1,0 +1,613 @@
+{
+ "popis": "Termíny DOD z Google formulára (tabuľka 1z45PL9cayoiNAYSp0uPMrbsKRXD7zgE4pZXVeLtGfVo, hárok 'Odpovede z formulára 1'). Kalendár /dni-otvorenych-dveri/ ich pridá k pevným termínom. Dopĺňa Claude každé ráno.",
+ "posledna_kontrola": "2026-11-18",
+ "spracovane_riadky": [
+  "28.10.2026 9:24:13",
+  "3.11.2026 12:30:34",
+  "4.11.2026 9:20:36",
+  "5.11.2026 13:35:04",
+  "13.11.2026 9:11:46",
+  "13.11.2026 10:04:35",
+  "13.11.2026 10:31:19",
+  "13.11.2026 10:45:05",
+  "13.11.2026 11:29:58",
+  "13.11.2026 13:01:36",
+  "13.11.2026 13:31:12",
+  "13.11.2026 13:57:43",
+  "13.11.2026 14:17:16",
+  "13.11.2026 14:59:02",
+  "13.11.2026 15:06:10",
+  "13.11.2026 15:41:18",
+  "13.11.2026 19:20:55",
+  "16.11.2026 8:35:31",
+  "16.11.2026 10:34:13",
+  "16.11.2026 14:26:39",
+  "16.11.2026 14:38:00",
+  "17.11.2026 10:37:53",
+  "18.11.2026 12:41:17",
+  "18.11.2026 13:05:49",
+  "18.11.2026 13:34:47"
+ ],
+ "vynechane": [
+  {
+   "riadok": "28.10.2026 9:24:13",
+   "dovod": "test (lucia@nakac.sk, 'Vysoká')"
+  },
+  {
+   "riadok": "4.11.2026 9:20:36",
+   "dovod": "Vysoká škola manažmentu – uviedli 16. 2. 2026 (minulý rok), čaká na potvrdenie roka"
+  },
+  {
+   "riadok": "13.11.2026 11:29:58",
+   "dovod": "AOS 19. 2. 2027 – už je v pevnom kalendári"
+  },
+  {
+   "riadok": "18.11.2026 12:41:17",
+   "dovod": "UK – Evanjelická bohoslovecká fakulta bez dátumu"
+  },
+  {
+   "riadok": "18.11.2026 13:05:49",
+   "dovod": "UPOL – duplicitný zápis (23. 1. 2027 už je)"
+  }
+ ],
+ "terminy": [
+  {
+   "date": "2027-01-22",
+   "uni": "Ostravská univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD",
+     "Přírodovědecká, Lékařská, Filozofická, Umění, Pedagogická, Sociálních studií"
+    ]
+   ],
+   "src": "3.11.2026 12:30:34"
+  },
+  {
+   "date": "2027-01-20",
+   "uni": "Trnavská univerzita v Trnave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Celouniverzitné DOD",
+     "Filozofická, Zdravotníctva a sociálnej práce, Právnická, Teologická, Pedagogická"
+    ]
+   ],
+   "src": "5.11.2026 13:35:04"
+  },
+  {
+   "date": "2027-02-10",
+   "uni": "Slovenská technická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Materiálovotechnologická fakulta (Trnava)"
+    ]
+   ],
+   "src": "13.11.2026 9:11:46"
+  },
+  {
+   "date": "2027-01-28",
+   "uni": "Slovenská technická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta elektrotechniky a informatiky"
+    ]
+   ],
+   "src": "13.11.2026 10:04:35"
+  },
+  {
+   "date": "2027-02-11",
+   "uni": "Slovenská technická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Stavebná fakulta"
+    ]
+   ],
+   "src": "13.11.2026 10:31:19"
+  },
+  {
+   "date": "2027-02-11",
+   "uni": "Slovenská technická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Strojnícka fakulta"
+    ]
+   ],
+   "src": "13.11.2026 10:45:05"
+  },
+  {
+   "date": "2027-02-26",
+   "uni": "Slovenská poľnohospodárska univerzita v Nitre",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta európskych štúdií a regionálneho rozvoja"
+    ]
+   ],
+   "src": "13.11.2026 13:01:36"
+  },
+  {
+   "date": "2027-02-05",
+   "uni": "Slovenská poľnohospodárska univerzita v Nitre",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta záhradníctva a krajinného inžinierstva"
+    ]
+   ],
+   "src": "13.11.2026 13:01:36"
+  },
+  {
+   "date": "2027-02-11",
+   "uni": "Slovenská poľnohospodárska univerzita v Nitre",
+   "cc": "SK",
+   "facs": [
+    [
+     "Technická fakulta"
+    ]
+   ],
+   "src": "13.11.2026 13:01:36"
+  },
+  {
+   "date": "2027-01-20",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta financí a účetnictví"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-16",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta mezinárodních vztahů"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-08",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta podnikohospodářská"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta informatiky a statistiky"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-15",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Národohospodářská fakulta"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Vysoká škola ekonomická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta managementu (Jindřichův Hradec)"
+    ]
+   ],
+   "src": "13.11.2026 13:31:12"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Vysoká škola chemicko-technologická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "13.11.2026 13:57:43"
+  },
+  {
+   "date": "2027-01-23",
+   "uni": "Vysoká škola chemicko-technologická v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "13.11.2026 13:57:43"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Jihočeská univerzita v Českých Budějovicích",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta zemědělská a technologická"
+    ]
+   ],
+   "src": "13.11.2026 14:17:16"
+  },
+  {
+   "date": "2027-01-23",
+   "uni": "Jihočeská univerzita v Českých Budějovicích",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta zemědělská a technologická"
+    ]
+   ],
+   "src": "13.11.2026 14:17:16"
+  },
+  {
+   "date": "2027-01-23",
+   "uni": "Univerzita Palackého v Olomouci",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "13.11.2026 14:59:02"
+  },
+  {
+   "date": "2027-02-09",
+   "uni": "Katolícka univerzita v Ružomberku",
+   "cc": "SK",
+   "facs": [
+    [
+     "Filozofická fakulta"
+    ],
+    [
+     "Pedagogická fakulta"
+    ],
+    [
+     "Teologická fakulta"
+    ]
+   ],
+   "src": "13.11.2026 15:06:10"
+  },
+  {
+   "date": "2027-02-08",
+   "uni": "Paneurópska vysoká škola",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta práva"
+    ],
+    [
+     "Fakulta psychológie"
+    ]
+   ],
+   "src": "13.11.2026 15:41:18"
+  },
+  {
+   "date": "2027-02-09",
+   "uni": "Paneurópska vysoká škola",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta informatiky"
+    ],
+    [
+     "Fakulta masmédií"
+    ],
+    [
+     "Fakulta ekonómie a podnikania"
+    ]
+   ],
+   "src": "13.11.2026 15:41:18"
+  },
+  {
+   "date": "2027-02-04",
+   "uni": "Univerzita sv. Cyrila a Metoda v Trnave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta sociálnych vied"
+    ]
+   ],
+   "src": "13.11.2026 19:20:55"
+  },
+  {
+   "date": "2027-02-25",
+   "uni": "Univerzita Konštantína Filozofa v Nitre",
+   "cc": "SK",
+   "facs": [
+    [
+     "Celouniverzitné DOD",
+     "Prírodných vied a informatiky, Sociálnych vied a zdravotníctva, Stredoeurópskych štúdií, Filozofická, Pedagogická"
+    ]
+   ],
+   "src": "16.11.2026 8:35:31"
+  },
+  {
+   "date": "2027-02-05",
+   "uni": "Univerzita Pavla Jozefa Šafárika v Košiciach",
+   "cc": "SK",
+   "facs": [
+    [
+     "Filozofická fakulta"
+    ]
+   ],
+   "src": "16.11.2026 10:34:13"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Česká zemědělská univerzita v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "16.11.2026 14:26:39"
+  },
+  {
+   "date": "2027-01-23",
+   "uni": "Česká zemědělská univerzita v Praze",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "16.11.2026 14:26:39"
+  },
+  {
+   "date": "2027-02-03",
+   "uni": "Technická univerzita vo Zvolene",
+   "cc": "SK",
+   "facs": [
+    [
+     "Celouniverzitné DOD",
+     "Lesnícka, Drevárska, Ekológie a environmentalistiky, Techniky, program Ekonomika a manažment prírodných zdrojov"
+    ]
+   ],
+   "src": "16.11.2026 14:38:00"
+  },
+  {
+   "date": "2027-02-12",
+   "uni": "Univerzita J. Selyeho",
+   "cc": "SK",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "17.11.2026 10:37:53"
+  },
+  {
+   "date": "2026-11-25",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Celouniverzitné DOD"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-01-30",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Pedagogická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-01",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Jesseniova lekárska fakulta (Martin)"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-03",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta matematiky, fyziky a informatiky"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-05",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta telesnej výchovy a športu"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-05",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Farmaceutická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-12",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Prírodovedecká fakulta"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-02-23",
+   "uni": "Univerzita Komenského v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta sociálnych a ekonomických vied"
+    ]
+   ],
+   "src": "18.11.2026 12:41:17"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Právnická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-16",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Lékařská fakulta (1. termín)"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-20",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Lékařská fakulta (2. termín)"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-23",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Přírodovědecká fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-15",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Filozofická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-30",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Pedagogická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-29",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Farmaceutická fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Ekonomicko-správní fakulta"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta informatiky"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-15",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta sociálních studií"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-01-28",
+   "uni": "Masarykova univerzita",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta sportovních studií"
+    ]
+   ],
+   "src": "18.11.2026 13:34:47"
+  }
+ ]
+}

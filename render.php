@@ -89,6 +89,22 @@ $cfg['gtm']     = knv_gtm_id();
 $cfg['ga2']     = knv_ga2_id();
 $cfg['track']   = ! $is_draft || isset( $_GET['knvtrack'] ); // phpcs:ignore WordPress.Security.NonceVerification
 $cfg['cookies'] = knv_link( 'Cookies' );
+// Termíny DOD z formulára pre vysoké školy (pages/dod-formular.json) – kalendár ich pridá k pevným termínom.
+if ( 'DOD' === $key && file_exists( knv_file( 'pages/dod-formular.json' ) ) ) {
+	$dodx = json_decode( (string) file_get_contents( knv_file( 'pages/dod-formular.json' ) ), true );
+	if ( is_array( $dodx ) && ! empty( $dodx['terminy'] ) ) {
+		$cfg['dodx'] = array_values( $dodx['terminy'] );
+		$li = '';
+		foreach ( $cfg['dodx'] as $x ) {
+			$ts = strtotime( isset( $x['date'] ) ? $x['date'] : '' );
+			if ( ! $ts ) { continue; }
+			$fs = array();
+			foreach ( (array) ( isset( $x['facs'] ) ? $x['facs'] : array() ) as $fc ) { $fs[] = is_array( $fc ) ? implode( ' – ', $fc ) : $fc; }
+			$li .= '<li>' . esc_html( date( 'j. n. Y', $ts ) . ' – ' . ( isset( $x['uni'] ) ? $x['uni'] : '' ) . ( $fs ? ': ' . implode( ', ', $fs ) : '' ) ) . '</li>';
+		}
+		if ( $li ) { $ns .= '<section><h2>Ďalšie termíny dní otvorených dverí</h2><ul>' . $li . '</ul></section>'; }
+	}
+}
 // Odpočet v noscript verzii zastaráva – vyhľadávačom ho nedávame.
 $ns   = preg_replace( '/už o \d+ dní ·?|\d[\d\s]*dní do zastávky presne[^<]*/u', '', $ns );
 $html = preg_replace( '#<title>[^<]*</title>#', '', $html, 1 );
