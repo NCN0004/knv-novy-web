@@ -112,6 +112,7 @@ input,select{font-family:inherit}
 </div>
 <form onSubmit="{{submit}}" style="background: #FFFFFF; border: 2px solid #2B7F29; border-radius: 28px; padding: 32px; box-shadow: 10px 10px 0 #CFE7CB; display: flex; flex-direction: column; gap: 16px">
 <h2 style="font-size: 26px; font-weight: 800; margin: 0 0 4px; text-align: right">Registrácia na výstavu</h2>
+<p style="font-size: 14px; line-height: 1.5; color: #4A4546; background: #F0F5EE; border-radius: 12px; padding: 10px 14px; margin: 0">Registrácia je dobrovoľná a vstup na výstavu je zadarmo aj bez nej. Ak sa zaregistruješ, pripomenieme ti blížiacu sa výstavu.</p>
 <div role="group" aria-label="Kto sa registruje" style="display: flex; background: #F6F5F3; border-radius: 14px; padding: 4px; gap: 4px">
 <button type="button" onClick="{{pickStudent}}" style="{{tabStudent}}">Prídem sám / s kamošmi</button>
 <button type="button" onClick="{{pickTrieda}}" style="{{tabTrieda}}">Prihlasujem triedu</button>
@@ -243,8 +244,8 @@ input,select{font-family:inherit}
 
 <div style="max-width: 760px; margin-bottom: 32px">
 <span style="font-family: Caveat, cursive; font-size: 30px; font-weight: 700; color: #C8232C">Všetci na jednom mieste</span>
-<h2 class="h2m" style="font-size: 48px; letter-spacing: -0.03em; margin: 4px 0 12px; font-weight: 800">Kto bude v <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">Bratislave</span></h2>
-<p style="font-size: 18px; color: #4A4546; margin: 0; line-height: 1.55">Celé univerzity aj jednotlivé fakulty, agentúry, ktoré zastupujú univerzity zo zahraničia, a ďalšie inštitúcie. Zatiaľ ukazujeme, kto vystavoval v Bratislave v roku 2026.</p>
+<h2 class="h2m" style="font-size: 48px; letter-spacing: -0.03em; margin: 4px 0 12px; font-weight: 800">Vystavovali v <span style="background: linear-gradient(transparent 58%, #CFE7CB 58%); padding: 0 6px">roku 2026</span></h2>
+<p style="font-size: 18px; color: #4A4546; margin: 0; line-height: 1.55">Celé univerzity aj jednotlivé fakulty, agentúry, ktoré zastupujú univerzity zo zahraničia, a ďalšie inštitúcie. Toto je zoznam z výstavy v Bratislave v roku 2026. Zoznam vystavovateľov na rok 2027 priebežne dopĺňame.</p>
 </div>
 
 <!-- počítadlá -->
@@ -317,7 +318,7 @@ input,select{font-family:inherit}
 <sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
 <div style="text-align: center; padding: 40px 16px; font-family: Caveat, cursive; font-size: 32px; font-weight: 700; color: #575152">Nič sme nenašli. Skús iné slovo – alebo sa opýtaj priamo na mieste.</div>
 </sc-if>
-<p style="font-size: 14px; color: #575152; margin: 0">Zoznam vystavovateľov z roku 2025 (zdroj: kamnavysoku.sk). Vystavovateľov na rok 2026 priebežne dopĺňame.</p>
+<p style="font-size: 14px; color: #575152; margin: 0">Zoznam vystavovateľov z výstavy v Bratislave v roku 2026. Vystavovateľov na rok 2027 priebežne dopĺňame.</p>
 </div>
 </section>
 

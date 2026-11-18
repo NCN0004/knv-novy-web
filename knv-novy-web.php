@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Kam na vysokú – nový web
  * Description: Nový dizajn kamnavysoku.sk (Roadshow 2026/27). Pri aktivácii vytvorí nové stránky ako KONCEPTY (verejne sa nič nezmení) a zobrazuje ich z HTML šablón v tomto plugine. Prehľad nájdete v Nástroje → Nový web KNV.
- * Version: 0.9.29
+ * Version: 0.9.30
  * Author: Národné kariérne centrum
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -10,7 +10,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'KNV_VERSION', '0.9.29' );
+define( 'KNV_VERSION', '0.9.30' );
 define( 'KNV_MAIL', 'lucia@nakac.sk' );
 define( 'KNV_GFORM', 'https://docs.google.com/forms/d/e/1FAIpQLSdEnEkV_r_lhc0yhIEHDeDRpybGUetH_nlA_8z3FoB6tVuUaw/viewform' );
 define( 'KNV_DIR', plugin_dir_path( __FILE__ ) );
@@ -77,6 +77,16 @@ function knv_link( $key ) {
 	if ( 'publish' === get_post_status( $id ) ) { return get_permalink( $id ); }
 	return add_query_arg( array( 'page_id' => $id, 'preview' => 'true' ), home_url( '/' ) );
 }
+
+/**
+ * „Pýtaj sa študenta“ je dočasne vypnuté (zatiaľ nemáme ambasádorov, ktorí by odpovedali).
+ * Návštevníka presmeruje na úvod; administrátor stránku vidí. Zapnutie: update_option( 'knv_pytaj_on', 1 ).
+ */
+add_action( 'template_redirect', function () {
+	if ( get_option( 'knv_pytaj_on' ) || ! is_page() || current_user_can( 'edit_pages' ) ) { return; }
+	$ids = get_option( 'knv_page_ids', array() );
+	if ( ! empty( $ids['Pytaj-sa'] ) && (int) $ids['Pytaj-sa'] === (int) get_queried_object_id() ) { wp_safe_redirect( home_url( '/' ), 302 ); exit; }
+} );
 
 /** Je nový web spustený naostro? */
 function knv_is_live() { return (bool) get_option( 'knv_live', false ); }
