@@ -1,5 +1,5 @@
 {
- "version": "0.9.26",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/2870b872bdc383c0af73d7bb218e9d6aa5f9cbc3.zip",
- "notes": "Štruktúrované dáta udalostí: doplnené pole performer (vystavovatelia)."
+ "version": "0.9.27",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/e9f48b6d79e6dd149f9bbd12385c53a715c3b48d.zip",
+ "notes": "Kalendár DOD: termíny z formulára vysokých škôl (január–február 2027), automatické dopĺňanie."
 }
