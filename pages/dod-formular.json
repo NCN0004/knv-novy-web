@@ -1,6 +1,6 @@
 {
  "popis": "Termíny DOD z Google formulára (tabuľka 1z45PL9cayoiNAYSp0uPMrbsKRXD7zgE4pZXVeLtGfVo, hárok 'Odpovede z formulára 1'). Kalendár /dni-otvorenych-dveri/ ich pridá k pevným termínom. Dopĺňa Claude každé ráno.",
- "posledna_kontrola": "2026-11-18",
+ "posledna_kontrola": "2026-11-19",
  "spracovane_riadky": [
   "28.10.2026 9:24:13",
   "3.11.2026 12:30:34",
@@ -26,7 +26,8 @@
   "17.11.2026 10:37:53",
   "18.11.2026 12:41:17",
   "18.11.2026 13:05:49",
-  "18.11.2026 13:34:47"
+  "18.11.2026 13:34:47",
+  "18.11.2026 20:14:25"
  ],
  "vynechane": [
   {
@@ -48,6 +49,10 @@
   {
    "riadok": "18.11.2026 13:05:49",
    "dovod": "UPOL – duplicitný zápis (23. 1. 2027 už je)"
+  },
+  {
+   "riadok": "18.11.2026 20:14:25",
+   "dovod": "EU v Bratislave – PHF, pracovisko Michalovce bez dátumu"
   }
  ],
  "terminy": [
@@ -608,6 +613,30 @@
     ]
    ],
    "src": "18.11.2026 13:34:47"
+  },
+  {
+   "date": "2027-02-12",
+   "uni": "Ekonomická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Podnikovohospodárska fakulta",
+     "so sídlom v Košiciach"
+    ]
+   ],
+   "src": "18.11.2026 20:14:25"
+  },
+  {
+   "date": "2027-02-10",
+   "uni": "Ekonomická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Podnikovohospodárska fakulta",
+     "so sídlom v Košiciach"
+    ]
+   ],
+   "src": "18.11.2026 20:14:25"
   }
  ]
 }
