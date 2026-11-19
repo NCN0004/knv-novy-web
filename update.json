@@ -1,5 +1,5 @@
 {
- "version": "0.9.31",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/832dee7682b868118620004876d862be0346a105.zip",
- "notes": "Oprava: kalendár DOD sa nenačítal (tlač PDF obsahovala značky, ktoré web nahrádza)."
+ "version": "0.9.32",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/ed65768e466b5342895392588ce62c33659ce4bb.zip",
+ "notes": "Termíny DOD z formulára: +2"
 }
