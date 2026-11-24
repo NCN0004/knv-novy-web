@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Kam na vysokú – nový web
  * Description: Nový dizajn kamnavysoku.sk (Roadshow 2026/27). Pri aktivácii vytvorí nové stránky ako KONCEPTY (verejne sa nič nezmení) a zobrazuje ich z HTML šablón v tomto plugine. Prehľad nájdete v Nástroje → Nový web KNV.
- * Version: 0.9.32
+ * Version: 0.9.33
  * Author: Národné kariérne centrum
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -10,7 +10,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'KNV_VERSION', '0.9.32' );
+define( 'KNV_VERSION', '0.9.33' );
 define( 'KNV_MAIL', 'lucia@nakac.sk' );
 define( 'KNV_GFORM', 'https://docs.google.com/forms/d/e/1FAIpQLSdEnEkV_r_lhc0yhIEHDeDRpybGUetH_nlA_8z3FoB6tVuUaw/viewform' );
 define( 'KNV_DIR', plugin_dir_path( __FILE__ ) );
