@@ -103,7 +103,7 @@ a{color:#2B7F29}a:hover{color:#1F6A1E}
 <label for="mesto" style="font-size: 14px; font-weight: 600; color: #575152; display: block; margin-bottom: 10px">Vyber si zastávku</label>
 <div id="mesto" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px">
 <sc-for list="{{cityChips}}" as="c" hint-placeholder-count="10">
-<button onClick="{{c.pick}}" style="{{c.chipStyle}}">{{c.name}}</button>
+<sc-if value="{{c.isLink}}" hint-placeholder-val="{{ false }}"><a href="{{c.href}}" data-knv="hero-mesto" style="{{c.linkStyle}}">{{c.name}} →</a></sc-if><sc-if value="{{c.isBtn}}" hint-placeholder-val="{{ true }}"><button onClick="{{c.pick}}" style="{{c.chipStyle}}">{{c.name}}</button></sc-if>
 </sc-for>
 </div>
 <div style="border-top: 2px dashed #CFCAC8; padding-top: 22px; position: relative">
@@ -460,6 +460,9 @@ class Component extends DCLogic {
       return {
         name: (c.up ? '' : '✓ ') + c.name,
         pick: function () { self.setState({ city: c.name }); },
+        isLink: !!c.up, isBtn: !c.up,
+        href: c.name === 'Prievidza' ? 'Zastavka-Prievidza.dc.html' : 'Zastavka-Bratislava.dc.html',
+        linkStyle: chipBase + 'display: inline-flex; align-items: center; gap: 6px; text-decoration: none; ' + (on ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #2B7F29; border: 1.5px solid #2B7F29;'),
         chipStyle: chipBase + (on ? 'background: #2B7F29; color: #FFFFFF; border: 1.5px solid #2B7F29;' : 'background: #FFFFFF; color: #393536; border: 1.5px solid #CFCAC8;')
       };
     });
