@@ -1,5 +1,5 @@
 {
- "version": "0.9.43",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/fc6b009a1d2f4a10120174a2258d318016662004.zip",
- "notes": "Úvod: tlačidlá Prievidza a Bratislava vedú na stránky výstav."
+ "version": "0.9.44",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/77488bb08711fcd961930a18cfa47eff0cae3c5e.zip",
+ "notes": "Prievidza: nový dizajn kariet vystavovateľov (logá, štítky fakúlt, Slovensko pri všetkých)."
 }
