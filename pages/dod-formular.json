@@ -1,6 +1,6 @@
 {
  "popis": "Termíny DOD z Google formulára (tabuľka 1z45PL9cayoiNAYSp0uPMrbsKRXD7zgE4pZXVeLtGfVo, hárok 'Odpovede z formulára 1'). Kalendár /dni-otvorenych-dveri/ ich pridá k pevným termínom. Dopĺňa Claude každé ráno.",
- "posledna_kontrola": "2026-11-24",
+ "posledna_kontrola": "2026-11-25",
  "spracovane_riadky": [
   "28.10.2026 9:24:13",
   "3.11.2026 12:30:34",
@@ -28,7 +28,8 @@
   "18.11.2026 13:05:49",
   "18.11.2026 13:34:47",
   "18.11.2026 20:14:25",
-  "23.11.2026 13:16:49"
+  "23.11.2026 13:16:49",
+  "24.11.2026 13:54:29"
  ],
  "vynechane": [
   {
@@ -649,6 +650,108 @@
     ]
    ],
    "src": "23.11.2026 13:16:49"
+  },
+  {
+   "date": "2027-01-15",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta stavební"
+    ],
+    [
+     "Fakulta elektrotechniky a komunikačních technologií"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-16",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta stavební"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-22",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta strojního inženýrství"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-02-12",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta elektrotechniky a komunikačních technologií"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-27",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta podnikatelská"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-29",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta informačních technologií"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-02-26",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Fakulta informačních technologií"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-02-19",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Ústav soudního inženýrství"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-21",
+   "uni": "Vysoké učení technické v Brně",
+   "cc": "CZ",
+   "facs": [
+    [
+     "Centrum sportovních aktivit"
+    ]
+   ],
+   "src": "24.11.2026 13:54:29"
   }
  ]
 }
