@@ -1,5 +1,5 @@
 {
- "version": "0.9.44",
- "package": "https://github.com/NCN0004/knv-novy-web/archive/77488bb08711fcd961930a18cfa47eff0cae3c5e.zip",
- "notes": "Prievidza: nový dizajn kariet vystavovateľov (logá, štítky fakúlt, Slovensko pri všetkých)."
+ "version": "0.9.45",
+ "package": "https://github.com/NCN0004/knv-novy-web/archive/d5c303a664c8afb30e4ac7c92e8f1186a9d1ff21.zip",
+ "notes": "DOD: odstránená duplicitná karta výstavy"
 }
