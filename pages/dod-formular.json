@@ -1,6 +1,6 @@
 {
  "popis": "Termíny DOD z Google formulára (tabuľka 1z45PL9cayoiNAYSp0uPMrbsKRXD7zgE4pZXVeLtGfVo, hárok 'Odpovede z formulára 1'). Kalendár /dni-otvorenych-dveri/ ich pridá k pevným termínom. Dopĺňa Claude každé ráno.",
- "posledna_kontrola": "2026-11-25",
+ "posledna_kontrola": "2026-11-27",
  "spracovane_riadky": [
   "28.10.2026 9:24:13",
   "3.11.2026 12:30:34",
@@ -29,7 +29,8 @@
   "18.11.2026 13:34:47",
   "18.11.2026 20:14:25",
   "23.11.2026 13:16:49",
-  "24.11.2026 13:54:29"
+  "24.11.2026 13:54:29",
+  "26.11.2026 15:44:36"
  ],
  "vynechane": [
   {
@@ -752,6 +753,17 @@
     ]
    ],
    "src": "24.11.2026 13:54:29"
+  },
+  {
+   "date": "2027-01-28",
+   "uni": "Slovenská technická univerzita v Bratislave",
+   "cc": "SK",
+   "facs": [
+    [
+     "Fakulta chemickej a potravinárskej technológie"
+    ]
+   ],
+   "src": "26.11.2026 15:44:36"
   }
  ]
 }
